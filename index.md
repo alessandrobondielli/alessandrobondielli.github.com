@@ -4,7 +4,7 @@ title: Esercitazioni Bioinformatica
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
-Benvenuti alla pagina relativa alle esercitazioni di Bioinformatica, A.A. 2017/2018. \\
+Benvenuti alla pagina relativa alle esercitazioni di Bioinformatica, A.A. 2018/2019. \\
 Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezione, con le relative soluzioni.
 
 ---

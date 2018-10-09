@@ -1,46 +1,79 @@
 ---
 layout: page
-title: Hello World!
+title: Esercitazioni Bioinformatica
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
+Benvenuti alla pagina relativa alle esercitazioni di Bioinformatica, A.A. 2017/2018. \\
+Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezione, con le relative soluzioni.
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+---
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
-## Update Author Attributes
+#### Laboratori
 
-In `_config.yml` remember to specify your own data:
-    
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
-<ul class="posts">
+<ul>
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+	{% if post.categories contains 'Laboratorio' %}
+    	<li>
+      		<a href="{{ post.url }}">{{ post.title }}</a>
+    	</li>
+    {% endif %}
   {% endfor %}
 </ul>
 
-## To-Do
+---
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+#### Chiarificazioni e tutorial sugli elementi presentati a lezione
+<ul>
+  {% for post in site.posts %}
+	{% if post.categories contains 'Tutorial' %}
+    	<li>
+      		<a href="{{ post.url }}">{{ post.title }}</a>
+    	</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+---
 
+### Problemi con Biopython
 
+Per installare Biopython sono disponibili diverse opzioni:
+
+- Se si utilizza [Anaconda](https://www.continuum.io/downloads) (**scelta consigliata**) aprire il terminale, e digitare
+	`conda install biopython` \\
+	Alternativamente è possibile installare la libreria utilizzando la GUI Anaconda Navigator.
+
+- Su Windows è possibile utilizzare [l'installer](http://biopython.org/wiki/Download)
+	avendo cura di selezionare la versione di python opportuna.
+
+- Installazione dai sorgenti; scaricare l'archivio [biopython-1.xy.tar.gz](http://biopython.org/wiki/Download)). \\
+	Da terminale: \\
+	Scompattare l'archivio e muoversi nella directory. \\
+	Dunque eseguire: \\
+	`python setup.py build`\\
+	`python setup.py test`\\
+	e, se non ci sono errori: \\
+	`sudo python setup.py install`
+
+- ...
+
+---
+
+### Alcuni link utili:
+
+#### Python
+
+- [Python Tutor](http://pythontutor.com) un tool attraverso cui scrivere script Python direttamente
+	sul web e visualizzarne l'esecuzione step-by-step.
+- [Anaconda Distribution](https://www.continuum.io/downloads) la distribuzione consigliata
+	di Python.
+- [Python Website](http://www.python.org) per documentazione e tutorial.
+- [Is Python pass-by-reference or pass-by-value?](http://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)
+interessante post per chiarire come gli argomenti sono passati alle funzioni in Python.
+- [Testare le Regex](https://regex101.com/) in python od altri linguaggi.
+
+#### Bioinformatica
+
+- [Biopython](http://biopython.org/wiki/Biopython) libreria di tool per computational biology in python.
+	Per l'installazione si invita ad utilizzare il package manager fornito assieme alla distribuzione di python.

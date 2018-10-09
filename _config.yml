@@ -11,9 +11,9 @@ highlighter: rouge
 title : Esercitazioni Bioinformatica
 tagline: Site Tagline
 author :
-  name : Marco Barsacchi
-  email : marco.barsacchi@unifi.it
-  github : mbarsacchi
+  name : Alessandro Bondielli
+  email : alessandro.bondielli@unifi.it
+  github : alessandrobondielli
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

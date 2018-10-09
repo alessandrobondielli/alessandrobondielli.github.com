@@ -121,7 +121,7 @@ n =  (499*500)/2
 #alternativa IV
 n = reduce(lambda x,y: x+y, xrange(500))
 ```
--->
+--->
 ---
 
 ## ESERCITAZIONE V
@@ -145,7 +145,7 @@ stringa = raw_input('Inserisci una stringa: ')
 for i,c in enumerate(stringa):
     print 'Lettera %d: %s' %(i+1, c)
 ```
--->
+--->
 ---
 
 ## ESERCITAZIONE VI
@@ -161,7 +161,7 @@ while True:
         break
     print len(stringa)
 ```
--->
+--->
 ---
 
 ## ESERCITAZIONE VII
@@ -184,4 +184,4 @@ while n < int(num):
         print n
     n += 1
 ```
--->
+--->

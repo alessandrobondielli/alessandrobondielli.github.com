@@ -68,8 +68,8 @@ d['esami'] = [{'nome':'Bioinformatica','voto': 30},
 d['esami'] = {'Bioinformatica': 30, 'Analisi': 18}
 ```
 --->
----
 
+---
 ## ESERCITAZIONE III
 
 Scrivere un programma che:
@@ -99,11 +99,13 @@ for d in l:
         print d['parola']
 ```
 --->
+
 ---
 
 ## ESERCITAZIONE IV
 
 Calcolare la somma dei primi 500 numeri naturali (da 0 incluso a 500 escluso).
+
 <!---
 ### Soluzione:
 ```python
@@ -122,6 +124,7 @@ n =  (499*500)/2
 n = reduce(lambda x,y: x+y, xrange(500))
 ```
 --->
+
 ---
 
 ## ESERCITAZIONE V
@@ -134,6 +137,7 @@ n = reduce(lambda x,y: x+y, xrange(500))
     `...`
 
 2. Modificare poi il programma in modo da leggere la stringa da tastiera.
+
 <!---
 ### Soluzione:
 ```python
@@ -146,12 +150,14 @@ for i,c in enumerate(stringa):
     print 'Lettera %d: %s' %(i+1, c)
 ```
 --->
+
 ---
 
 ## ESERCITAZIONE VI
 
 Scrivere un programma che stampi la lunghezza di una stringa fornita dall'utente,
 e ripeta questo processo finchè l'utente non inserisce la stringa 'exit'.
+
 <!---
 ### Soluzione:
 ```python
@@ -162,12 +168,13 @@ while True:
     print len(stringa)
 ```
 --->
----
 
+---
 ## ESERCITAZIONE VII
 
 Scrivere un programma che prenda in ingresso un intero e stampi tutti i numeri
 primi fino al numero fornito dall’utente.
+
 <!---
 ### Soluzione:
 

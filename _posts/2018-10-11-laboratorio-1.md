@@ -98,7 +98,7 @@ for d in l:
     for i in range(d['volte']):
         print d['parola']
 ```
--->
+--->
 ---
 
 ## ESERCITAZIONE IV

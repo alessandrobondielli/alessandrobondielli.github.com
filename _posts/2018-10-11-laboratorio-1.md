@@ -7,7 +7,7 @@ tags: [liste, tuple, dizionari]
 ---
 {% include JB/setup %}
 
-## ESERCITAZIONE I
+## ESERCIZIO I
 
 Utilizzando la console interattiva:
 
@@ -22,13 +22,13 @@ Utilizzando la console interattiva:
     In ogni dizionario, gli amminoacidi devono essere rappresentati tramite la
     chiave "nome" e le sigle tramite la chiave "sigla".
 
-<!---
+
 ### Soluzione:
 ```python
 amminoacidi = ('Alanina', 'Glicina', 'Lisina')
 sigle = ('Ala', 'Gly', 'Lys')
 
-# alternativa I:
+# alternativa I - Utilizzo di List comprehension:
 
 l = [{'nome': amminoacido,'sigla': sigla} for amminoacido, sigla in
              zip(amminoacidi, sigle)]
@@ -39,10 +39,9 @@ l = []
 for amminoacido, sigla in zip(amminoacidi, sigle):
         l.append({'nome':amminoacido, 'sigla': sigla})
 ```
---->
 
 ---
-## ESERCITAZIONE II
+## ESERCIZIO II
 
 Utilizzando la console interattiva:
 1. Creare un dizionario che contenga come chiavi nome e cognome, inserendo i
@@ -51,7 +50,7 @@ Utilizzando la console interattiva:
 3. Aggiungere esami, provando ad immaginare che tipi di dato usare per
     rappresentare sia nome che voto degli esami.
 
-<!---
+
 ### Soluzione:
 ```python
 d = {'nome':'Pinco', 'cognome': 'Pallino'}
@@ -67,10 +66,9 @@ d['esami'] = [{'nome':'Bioinformatica','voto': 30},
 
 d['esami'] = {'Bioinformatica': 30, 'Analisi': 18}
 ```
---->
 
 ---
-## ESERCITAZIONE III
+## ESERCIZIO III
 
 Scrivere un programma che:
 1. Crei una lista di coppie (stringa, intero), utilizzando tuple. Ad esempio:
@@ -82,7 +80,6 @@ Scrivere un programma che:
 3. Ripetere l'esercizio utilizzando dizionari al posto di tuple
     (usare le seguenti chiavi: parola, volte).
 
-<!---
 ### Soluzione:
 ```python
 l = [('hello', 3), ('world', 2), ('!', 1)]
@@ -98,15 +95,13 @@ for d in l:
     for i in range(d['volte']):
         print d['parola']
 ```
---->
 
 ---
 
-## ESERCITAZIONE IV
+## ESERCIZIO IV
 
 Calcolare la somma dei primi 500 numeri naturali (da 0 incluso a 500 escluso).
 
-<!---
 ### Soluzione:
 ```python
 # alternativa I:
@@ -123,11 +118,10 @@ n =  (499*500)/2
 #alternativa IV
 n = reduce(lambda x,y: x+y, xrange(500))
 ```
---->
 
 ---
 
-## ESERCITAZIONE V
+## ESERCIZIO V
 
 1. Scrivere un programma che, data la stringa 'abcdefghi', la analizzi e
     stampi a video:
@@ -138,7 +132,7 @@ n = reduce(lambda x,y: x+y, xrange(500))
 
 2. Modificare poi il programma in modo da leggere la stringa da tastiera.
 
-<!---
+
 ### Soluzione:
 ```python
 stringa = 'abcdefghi'
@@ -149,16 +143,14 @@ stringa = raw_input('Inserisci una stringa: ')
 for i,c in enumerate(stringa):
     print 'Lettera %d: %s' %(i+1, c)
 ```
---->
 
 ---
 
-## ESERCITAZIONE VI
+## ESERCIZIO VI
 
 Scrivere un programma che stampi la lunghezza di una stringa fornita dall'utente,
 e ripeta questo processo finchè l'utente non inserisce la stringa 'exit'.
 
-<!---
 ### Soluzione:
 ```python
 while True:
@@ -167,15 +159,13 @@ while True:
         break
     print len(stringa)
 ```
---->
 
 ---
-## ESERCITAZIONE VII
+## ESERCIZIO VII
 
 Scrivere un programma che prenda in ingresso un intero e stampi tutti i numeri
 primi fino al numero fornito dall’utente.
 
-<!---
 ### Soluzione:
 
 ```python
@@ -191,4 +181,61 @@ while n < int(num):
         print n
     n += 1
 ```
---->
+
+---
+## ESERCIZIO VIII
+Scrivere un programma che:
+
+1. Prenda una stringa in input da tastiera, rappresentante un singolo nucleotide \\
+    `(A, C, G oppure T)`.
+
+2. Stampi a video una stringa rappresentante il nucleotide complementare.
+
+Assicurarsi che il programma funzioni correttamente sia con input maiuscolo 
+    che minuscolo.
+    
+### Soluzione:
+```python
+nuc = raw_input('Inserire un singolo nucleotide (A, C, G, T): \n')
+
+nuc =  nuc.upper()
+
+# Alternativa I:
+
+if nuc == 'A':
+    print 'T'
+elif nuc == 'C':
+    print 'G'
+elif nuc == 'G':
+    print 'C'
+elif nuc == 'T':
+    print 'A'
+else:
+    print "Nucleotide %s sconosciuto" %s
+
+
+# Alternativa II:
+
+nuc_dict = {'A':'T','C':'G','G':'C','T':'A'}
+
+print nuc_dict[nuc]
+
+
+```
+
+---
+## ESERCIZIO IX
+1. Riprendere l'esercizio 8, e risolverlo definendo una funzione complementare(), 
+    che ritorni il nucleotide complementare a quello passato come argomento:
+
+```python
+>>> complementare ('C')
+'G'
+```
+        
+2. Modificare l'esercizio in modo da gestire il caso in cui sia inserito un 
+    nucleotide non valido tramite l'uso delle eccezioni. In particolare si 
+    modifichi la funzione complementare in modo da lanciare un eccezione 
+    generica Exception in caso di nucleotide non valido. Tale eccezione deve 
+    essere catturata e gestita dal programma principale tramite la stampa a 
+    video di un messaggio di errore.

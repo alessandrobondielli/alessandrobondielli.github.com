@@ -75,7 +75,7 @@ except Exception:
 
 1. Modificare ulteriormente il programma dell'esercizio 9 (punto I) in modo da 
     aggiungere una funzione filamento_opposto(), che utilizzi la funzione 
-    complementare() per ritornare il filamento opposto a quello 
+    complementare() per restituire il filamento opposto a quello 
     passato come argomento:
 
     `>>> filamento_opposto('CTAATGT ')`\\

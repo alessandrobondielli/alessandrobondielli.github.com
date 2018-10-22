@@ -70,6 +70,7 @@ except Exception:
     print "Errore, nucleotide inserito non valido"
 ```
 
+---
 ## ESERCIZIO X
 
 1. Modificare ulteriormente il programma dell'esercizio 9 (punto I) in modo da 

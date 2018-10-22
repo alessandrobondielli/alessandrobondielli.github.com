@@ -17,7 +17,7 @@ Utilizzando la console interattiva:
     `sigle: Ala, Gly, Lys`
 
 2. Ottenere da esse una **lista** in cui ogni elemento è un **dizionario** che
-    rappresenta un amminoacido e sigla (Alanina Ala, Glicina Gly ecc.).
+    rappresenta un amminoacido e sigla (Alanina Ala, Glicina Gly etc.).
     Amminoacidi e sigle vanno accoppiati in base all’ordine con cui sono elencati.
     In ogni dizionario, gli amminoacidi devono essere rappresentati tramite la
     chiave "nome" e le sigle tramite la chiave "sigla".

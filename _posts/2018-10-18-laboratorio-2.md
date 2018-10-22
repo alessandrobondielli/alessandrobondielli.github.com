@@ -2,7 +2,7 @@
 layout: post
 title: "Laboratorio 2"
 description: ""
-category: "Laboratorio"
+category: Laboratorio
 tags: [funzioni, operatori condizionali]
 ---
 {% include JB/setup %}

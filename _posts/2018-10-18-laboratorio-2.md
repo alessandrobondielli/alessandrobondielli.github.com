@@ -90,7 +90,13 @@ except Exception:
         
     `>>> reverse_complement('CTAATGT')`\\
     `'ACATTAG'`
-    
+
+4. Modificare il programma in maniera tale da importare il modulo random e 
+    usarlo per generare un filamento casuale da dare in pasto alla funzione 
+    reverse_complement. Si consiglia di usare la funzione choice() del modulo 
+    random che ritorna un elemento casuale tra gli elementi di una 
+    sequenza data in ingresso.
+
 
 ### Soluzione:
 
@@ -116,6 +122,26 @@ def reverse_complement(filamento):
     return filamento_opposto(rev_f)
     
 print reverse_complement('CTAATGT')
+
+# Punto IV:
+
+import random
+
+filamento = ''
+#genero un filamento di lunghezza 10
+
+#opzione I : ciclo for
+for i in range(10):
+    filamento = filamento + random.choice('CGAT')
+print filamento
+
+# opzione II: list comprehension
+filamento = ''.join([random.choice('CGAT') for i in xrange(10)])
+print filamento
+
+print filamento_opposto(filamento)
+print reverse_complement(filamento)
+
 
 ... 
 

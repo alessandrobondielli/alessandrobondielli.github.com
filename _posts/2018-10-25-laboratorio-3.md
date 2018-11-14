@@ -180,9 +180,10 @@ print dhplus(s3,s4)
 # Punto III ???
 
 ```
-<!--
+
 
 # Punto III
+```python
 def dhplus1(s,t):
     lun =len(s) + len(t)
     sprime = s + '-'*(lun - len(s))
@@ -197,5 +198,5 @@ def dhplus1(s,t):
     return dist
     
 print dhplus1(s3,s4)
+```
 
--->

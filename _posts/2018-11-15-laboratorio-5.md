@@ -1,98 +1,12 @@
 ---
 layout: post
-title: "Laboratorio 4"
+title: "Laboratorio 5"
 description: ""
 category: "Laboratorio"
 tags: [cicli, funzioni, distanza di Hamming]
 ---
 {% include JB/setup %}
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-## ESERCIZIO XIV
-
-Scrivere un programma che:
-
-1. Utilizza la list comprehension per creare la lista dei primi dieci cubi:\\
-    `[0,1,8,27 ... ]`
-2. Utilizza la funzione `filter` per ottenere una nuova lista con solo
-numeri pari.
-3. Utilizza la funzione `map` per ottenere una nuova lista che
-contenga gli elementi della precedente moltiplicati per 3.
-4. Utilizza lo _slice_ operator per ottenere una nuova lista senza il
-primo elemento.
-5. Utilizza la funzione `reduce` per ottenere il prodotto degli elementi.
-
-### Soluzione
-
-```python
-# Punto 1
-lista = [ x**3 for x in xrange(10) ]
-
-# Punto 2
-lista2 = filter( lambda el: not el%2, lista )
-
-# Punto 3
-lista3 = map(lambda x: x*3, lista2)
-
-# Punto 4
-lista4 = lista3[1:]
-
-# Punto 5
-prodotto = reduce(lambda x,y: x*y, lista4)
-```
-
-## ESERCIZIO XV
-
-Scrivere un programma che:
-
-1. Crei una stringa ripetendo 10,000 volte la stringa "CGAT".
-
-2. Crei una stringa di 40,000 caratteri scelti a caso dall'alfabeto $$\mathcal{A} = \{`A',`C',`G',`T'\}$$
-
-3. Utilizzi la funzione `compress()` del modulo `zlib` ([documentazione](https://docs.python.org/2/library/zlib.html)) per comprimere ciascuna delle due stringhe.
-    Infine si calcoli le lunghezze delle nuove stringhe così ottenute ed i relativi rapporti di compressione.
-
-### Soluzione
-
-```python
-import random
-import zlib
-
-s1 = 'CGAT' * 10000
-s2 = ''.join([random.choice('CGAT') for i in xrange(40000)])
-
-zs1 = zlib.compress(s1)
-zs2 = zlib.compress(s2)
-
-print len(zs1)/float(len(s1))
-print len(zs2)/float(len(s2))
-```
-
-## ESERCIZIO XVI
-Funzioni ricorsive
-
-1. Scrivere un programma che calcoli il fattoriale di un numero dato in input dall’utente.
-    Il programma dovra fare uso di **funzioni ricorsive**.
-2. Scrivere una funzione ricorsiva che calcoli la somma degli elementi di un vettore dato in ingresso.
-
-### Soluzione
-
-```python
-# Punto 1
-def fattoriale(n):
-    if n == 1 or n == 0:
-        return 1
-    return n * fattoriale(n-1)
-
-num = int(raw_input("scegli un numero di cui calcolare il fattoriale:"))
-
-print fattoriale(num)
-
-# Punto 2
-def somma(vect):
-    if len(vect) == 1:
-        return vect[0]
-    return vect[0] + somma(vect[1:])
-```
 
 ## ESERCIZIO XVII
 
@@ -120,6 +34,11 @@ Utilizzado il codice fornito si:
 1. Generi una sequenza casuale di lunghezza 100 nucleotidi; si generi un modello di Jukes e Cantor per ogni nucleotide, e si faccia evolvere la sequenza per 100 **passi**. Si stampi a video la distanza di hamming tra la sequenza originale e la sequenza evoluta.
 
 2. Generi una sequenza casuale di lunghezza 100 nucleotidi; si generi un modello di Jukes e Cantor per ogni nucleotide, e si faccia evolvere la sequenza per 100 **mutazioni**. Si stampi a video la distanza di hamming tra la sequenza originale e la sequenza evoluta.
+
+3. Ripetendo l'esperimento definito al punto 2 per un certo numero k (es: k=10) volte, si stimi distanza di hamming media tra la sequenza originale e la sequenze evolute. Questo rappresenta un punto sul grafico in figura, dove k rappresenta il numero di mutazioni e c la distanza misurata.
+  <img src="../../../../python/relation.jpg" alt="Relationship mutation" height="300" width="300">
+
+4. Ripetendo l'esperimento del punto 3 per diversi valori del numero di mutazioni, si stimi l'intero grafico.
 
 
 ### Soluzione
@@ -154,5 +73,51 @@ while counter <num_mutations:
 
 seq2 = ''.join(model.get_state() for model in models)
 print sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2))
+
+#%%
+# Punto III
+num_tests = 10
+num_mutations = 100
+vect = []
+for k in range(num_tests):
+    models = [JC69(nuc) for nuc in sequence]
+    counter = 0
+
+    while counter <num_mutations:
+        for i in range(length):
+            evolved = models[i].move()
+            counter += evolved
+            if counter == num_mutations:
+                break
+    seq2 = ''.join(model.get_state() for model in models)
+    vect.append(sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2)))
+print sum(vect)/num_tests
+
+#%%
+
+# Punto IV
+import  numpy as np
+
+num_tests = 30
+total_arr = np.zeros((num_tests,length*5))
+
+for k in range(num_tests):
+    print "Evaluating for %d mutations, test n°: %d" %(length*5, k+1)
+    models = [JC69(nuc) for nuc in sequence]
+    counter = 0
+    while counter < length*5:
+        for i in range(length):
+            evolved = models[i].move()
+            counter += evolved
+            if counter == length*5:
+                break
+            if evolved:
+                seq2 = ''.join(model.get_state() for model in models)
+                total_arr[k,counter] = sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2))
+
+import matplotlib.pyplot as plt
+plot_gen(total_arr)
 ```
+
+
 

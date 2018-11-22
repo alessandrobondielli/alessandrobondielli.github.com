@@ -1,8 +1,8 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
-import numpy.random as random
+import matplotlib.pyplot as plt
 
-class MarkovChain(object):
+class MarkovChain:
     """Simple Markov Chain Model.
     Parameters
     ----------
@@ -89,7 +89,7 @@ class MarkovChain(object):
         return state
         
     def move(self):
-        """Move the Markov Chain of one step.
+        """Sample num_samples samples from the Markov Model.
         
         Parameters
         ----------
@@ -106,7 +106,7 @@ class MarkovChain(object):
         if self.verbose:
             print 'New State: %s' % (state)
         return self.state != current_state
-        
+
         
 # Jukes e Cantor
 # alpha < 1/3.
@@ -147,3 +147,19 @@ def JC69(nucleotide):
     mc = MarkovChain(n, prob, JC69_sub, states = states)
     mc.set_state(nucleotide)
     return mc
+
+#plot della distribuzione
+  
+def plot_gen(total_arr):
+    total_v = total_arr.mean(axis=0)
+    
+    fig = plt.figure()
+    ax = plt.plot(total_v,range(length*5))
+    plt.plot(range(length),range(length))
+    plt.plot([75,75],[0,500],'--')
+    c_p = np.linspace(0,0.75,750,endpoint=False)
+    k_p = -3./4 * np.log(1- 4./3 *c_p)
+    plt.plot(c_p*length,k_p*length)
+    plt.xlabel('c')
+    plt.ylabel('k')
+    return plt

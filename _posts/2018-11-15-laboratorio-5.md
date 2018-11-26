@@ -119,5 +119,67 @@ import matplotlib.pyplot as plt
 plot_gen(total_arr)
 ```
 
+---
+## ESERCIZIO XVIII
+Scrivere un programma che:
+
+1. Dati due vettori, crei la matrice del prodotto $$V_1 * V_2^T$$. 
+    Ideare una struttura dati appropriata per implementare la matrice.
+
+    $$V_1 = \begin{pmatrix}1\\ 2\\ 3\\ 4\\ 5 \end{pmatrix} \quad V_2 = \begin{pmatrix} 6\\ 7\\ 8\\ 9\\ 10 \end{pmatrix}$$
+
+2. Completare il programma con una stampa della matrice riga per riga: \\
+    `[6, 7, 8 ... ]`\\
+    `[12 , 14, 16 ... ]`\\
+    `...`
+2. Aggiungere una funzione stampa_matrice(mat), che migliori la stampa:\\
+    `stampa_matrice(mat)`\\
+    `6 7 8 9 10`\\
+    `12 14 16 18 20`\\
+    `18 21 24 27 30`\\
+    `...`\\
+Per fare in modo che i numeri siano stampati allineati, usare per ogni numero il costrutto di string formatting come riportato:\\
+`print '%3i' % num`
+
+
+### Soluzione
+
+```python
+import numpy as np
+
+vector_1 = np.array([1,2,3,4,5])
+vector_2 = np.array([6,7,8,9,10])
+
+matrix = []
+
+
+for elem in vector_1:
+
+    row = elem*vector_2
+    matrix.append(row)
+
+ 
+for row in np.array(matrix):
+    print row
+    
+print 
+# Soluzione list comprehension
+matrix = [elem*vector_2 for elem in vector_1]
+print np.array(matrix)
+
+
+print 
+
+
+# Punto II
+def stampa_matrice(matrix):
+    for row in matrix :
+        for num in row :
+            print '%3i' % num,
+        print
+    print
+
+stampa_matrice(matrix)
+```
 
 

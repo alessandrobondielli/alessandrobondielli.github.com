@@ -159,3 +159,42 @@ print dict_ammino
 
 ```
 --->
+---
+## ESERCIZIO XXV
+
+Scrivere un programma che usando la libreria [*Biopython*](http://biopython.org/wiki/Documentation) effettua le seguenti operazioni:
+
+1. Istanziare due oggetti Seq rappresentanti rispettivamente la sequenza `ACT` e la sua sequenza complementare.
+2. Usare la libreria SeqIO per parsare il file [`ls_orchid.gbk`](../../../../python/ls_orchid.gbk) in formato `genbank`. Per ciascuna sequenza si stampino l'ID,
+    la lunghezza della sequenza e il numero delle occorrenze delle sequenze istanziate al punto precedente rispettivamente nella
+    sequenza letta e in quella complementare.
+3. Si filtrino le sequenze lette al punto precedente in modo da selezionare solo quelle con una lunghezza inferiore a 700.
+4. Si salvino le sequenza filtrate su un nuovo file usando il formato FASTA.
+
+### Soluzione
+<!---
+```python
+from Bio import SeqIO
+from Bio.Seq import Seq
+
+# Punto 1
+seq = Seq('ACT')
+seq2 = seq.complement()
+
+# Punto 2
+ls_orchid = SeqIO.parse('ls_orchid.gbk',format='genbank')
+
+for seq_orch in ls_orchid:
+    seq_o = seq_orch.seq
+    seq_c = seq_orch.seq.complement()
+    print seq_orch.id, len(seq_o)
+    print '\tACT occ: ',str(seq_o).count(str(seq)), '-', str(seq_c).count(str(seq))
+    print '\tTGA occ: ',str(seq_o).count(str(seq2)), '-', str(seq_c).count(str(seq2))
+
+# Punto 3
+filtered = filter(lambda l: len(l.seq) < 700, SeqIO.parse('ls_orchid.gbk',format='genbank'))
+
+# Punto 4
+SeqIO.write(filtered,'ls_orchid.fasta',format='fasta')
+```
+--->

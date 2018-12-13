@@ -20,7 +20,7 @@ Scrivere un programma che usando la libreria [*Biopython*](http://biopython.org/
 4. Si salvino le sequenza filtrate su un nuovo file usando il formato FASTA.
 
 ### Soluzione
-<!---
+
 ```python
 from Bio import SeqIO
 from Bio.Seq import Seq
@@ -45,7 +45,6 @@ filtered = filter(lambda l: len(l.seq) < 700, SeqIO.parse('ls_orchid.gbk',format
 # Punto 4
 SeqIO.write(filtered,'ls_orchid.fasta',format='fasta')
 ```
---->
 
 ---
 ## ESERCIZIO XXVI
@@ -68,7 +67,7 @@ class TNode:
 3. Si aggiunga un metodo a TNode che restituisca una lista con i contenuti dei nodi ottenuti in accordo a una visita
     in profondità con ordinamento simmetrico (ovvero depth-first, in-order).
 
-<!--
+
 ### Soluzione
 
 ```python
@@ -90,6 +89,9 @@ class TNode:
             return TNode(data=intList[midPoint], left = TNode.buildTree(intList[:midPoint]),
                          right = TNode.buildTree(intList[midPoint+1:]))
 
+```
+<!---
+```python
 # Punto 2
     def printTree(self):
         if self.left:
@@ -114,4 +116,4 @@ myTree = TNode.buildTree(lista_nodi)
 myTree.printTree()
 print myTree.treeToList()
 ```
--->a
+--->

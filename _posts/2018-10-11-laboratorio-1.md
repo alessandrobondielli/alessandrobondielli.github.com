@@ -120,7 +120,7 @@ n = reduce(lambda x,y: x+y, xrange(500))
 ```
 
 ---
-
+<!---
 ## ESERCIZIO V
 
 1. Scrivere un programma che, data la stringa 'abcdefghi', la analizzi e
@@ -239,3 +239,5 @@ print nuc_dict[nuc]
     generica Exception in caso di nucleotide non valido. Tale eccezione deve 
     essere catturata e gestita dal programma principale tramite la stampa a 
     video di un messaggio di errore.
+    
+-->

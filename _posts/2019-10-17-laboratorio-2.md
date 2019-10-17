@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Laboratorio 1"
+title: "Laboratorio 2"
 description: ""
 category: Laboratorio
 tags: [liste, tuple, dizionari]

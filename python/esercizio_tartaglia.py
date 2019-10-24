@@ -1,9 +1,6 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct 17 15:21:16 2016
-
-@author: marcobarsacchi
 
 Scrivere un programma in grado di generare un triangolo di Tartaglia
 di altezza `n`, dove `n` è  un intero inserito da tastiera.

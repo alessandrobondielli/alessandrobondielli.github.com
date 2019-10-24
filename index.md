@@ -39,7 +39,7 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 #### Codice
 <ul>
 <li>
-	<a href="alessandrobondielli.github.io/python/esercizio_tartaglia">Esercizio Tartaglia</a>
+	<a href="alessandrobondielli.github.io/python/esercizio_tartaglia.py">Esercizio Tartaglia</a>
 </li>
 </ul>
 ---

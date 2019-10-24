@@ -42,6 +42,7 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 	<a href="alessandrobondielli.github.io/python/esercizio_tartaglia">Esercizio Tartaglia</a>
 </li>
 </ul>
+---
 ### Problemi con Biopython
 
 Per installare Biopython sono disponibili diverse opzioni:

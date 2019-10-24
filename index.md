@@ -43,6 +43,7 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 </li>
 </ul>
 ---
+
 ### Problemi con Biopython
 
 Per installare Biopython sono disponibili diverse opzioni:

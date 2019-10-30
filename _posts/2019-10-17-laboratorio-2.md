@@ -175,17 +175,65 @@ except Exception:
 2. Modificare la soluzione in modo da usare la funzione map al posto della 
     funzione filamento_opposto() definita al punto precedente. 
     La funzione complementare potra' essere sfruttata dalla funzione map.
-    
-3. Definire una funzione generatore gen_filamento_opposto(). Il generatore deve produrre il filamento opposto a quello passato come argomento, un nucleotide alla volta.
 
-4. Aggiungere una funzione reverse_complement(), che restituisca il reverse 
+3. Aggiungere una funzione reverse_complement(), che restituisca il reverse 
   complement del filamento passato come argomento alla funzione:
         
     `>>> reverse_complement('CTAATGT')`\\
     `'ACATTAG'`
 
-5. Modificare il programma in maniera tale da importare il modulo random e 
+4. Modificare il programma in maniera tale da importare il modulo random e 
     usarlo per generare un filamento casuale da dare in pasto alla funzione 
-    reverse_complement. Suggerimento: usare la funzione choice() del modulo 
+    reverse_complement. Si consiglia di usare la funzione choice() del modulo 
     random che ritorna un elemento casuale tra gli elementi di una 
     sequenza data in ingresso.
+
+
+### Soluzione:
+
+```python
+
+# Punto I:
+
+def filamento_opposto(filamento):
+    sequenza_opposta = [complementare(c) for c in filamento]
+    return ''.join(sequenza_opposta)
+
+# Punto II:
+filamento_opposto_list = map(complementare, filamento)
+
+filamento_opposto = ''.join(filamento_opposto_list)
+
+
+# Punto III:
+
+def reverse_complement(filamento):
+    # Ottenere il reverse del filamento
+    rev_f = filamento[::-1] 
+    return filamento_opposto(rev_f)
+    
+print reverse_complement('CTAATGT')
+
+# Punto IV:
+
+import random
+
+filamento = ''
+#genero un filamento di lunghezza 10
+
+#opzione I : ciclo for
+for i in range(10):
+    filamento = filamento + random.choice('CGAT')
+print filamento
+
+# opzione II: list comprehension
+filamento = ''.join([random.choice('CGAT') for i in xrange(10)])
+print filamento
+
+print filamento_opposto(filamento)
+print reverse_complement(filamento)
+
+
+... 
+
+```

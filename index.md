@@ -79,9 +79,13 @@ Per installare Biopython sono disponibili diverse opzioni:
 - [Python Website](http://www.python.org) per documentazione e tutorial.
 - [Is Python pass-by-reference or pass-by-value?](http://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)
 interessante post per chiarire come gli argomenti sono passati alle funzioni in Python.
+#### Tutorial Online
 - [Testare le Regex](https://regex101.com/) in python od altri linguaggi.
-- [List Slicing](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/) tutorial in python.
-- [Tutorial su ricorsone](https://realpython.com/python-thinking-recursively/) in python.
+- Tutorial su [List Slicing](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/) in python.
+- **Ricorsione**: 
+	- [Introduzione alla ricorsione](https://realpython.com/python-thinking-recursively/) su RealPython.com 
+	- [Recursion 'Super Power' (in Python) - Computerphile](https://www.youtube.com/watch?v=8lhxIOAfDss) (Torri di Hanoi) YouTube.
+
 
 #### Bioinformatica
 

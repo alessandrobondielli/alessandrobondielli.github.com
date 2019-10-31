@@ -80,6 +80,7 @@ Per installare Biopython sono disponibili diverse opzioni:
 - [Is Python pass-by-reference or pass-by-value?](http://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/)
 interessante post per chiarire come gli argomenti sono passati alle funzioni in Python.
 - [Testare le Regex](https://regex101.com/) in python od altri linguaggi.
+- [List Slicing](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/) in python.
 
 #### Bioinformatica
 

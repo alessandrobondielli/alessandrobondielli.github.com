@@ -81,6 +81,7 @@ Per installare Biopython sono disponibili diverse opzioni:
 interessante post per chiarire come gli argomenti sono passati alle funzioni in Python.
 - [Testare le Regex](https://regex101.com/) in python od altri linguaggi.
 - [List Slicing](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/) tutorial in python.
+- [Tutorial su ricorsone](https://realpython.com/python-thinking-recursively/) in python.
 
 #### Bioinformatica
 

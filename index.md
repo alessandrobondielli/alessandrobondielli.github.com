@@ -40,6 +40,7 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 <ul>
 <li>
 	<a href="/python/esercizio_tartaglia.py">Esercizio Tartaglia</a>
+	<a href="/python/MarkovChain.py">Markov Chain - Jukes Cantor</a>
 </li>
 </ul>
 ---

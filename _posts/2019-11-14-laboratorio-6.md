@@ -70,85 +70,133 @@ Utilizzado il codice fornito si:
 ### Soluzione
 
 ```python
-# Punto I
+
+import random
+from MarkovChain import JC69
+import numpy as np
+
+
+def hdist(s,t):
+    d = sum(ch1!=ch2 for ch1,ch2 in zip(s,t))
+    return d
+
+
 length = 100
-sequence = ''.join(random.choice(list('ACGT')) for k in range(length))
-print sequence
-models = [JC69(nuc) for nuc in sequence]
+seq0= "".join([random.choice("ACGT") for x in range(length)])
 
-num_it = 100
-for it in range(num_it):
-    for i in range(length):
-        models[i].move()
-seq2 = ''.join(model.get_state() for model in models)
-print sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2))
+print "initial sequence:\n"+seq0
+print
 
-```
 
-<!---
+#%%
+# Punto I
+    
+num_steps = 100
 
-```python
+models = [JC69(nuc) for nuc in seq0]
+
+for i in xrange(num_steps):
+    for model in models:
+        model.move()
+        
+seq1 = ''.join(model.get_state() for model in models)
+
+print "Hamming distance after %d steps:" % \
+    (num_steps), hdist(seq0,seq1)
+print
+
+
+#%%
 # Punto II
-models = [JC69(nuc) for nuc in sequence]
 
-counter = 0
 num_mutations = 100
 
-while counter <num_mutations:
-    for i in range(length):
-        counter += models[i].move()
-        if counter == num_mutations:
+models = [JC69(nuc) for nuc in seq0]
+
+access_sequence = range(length)
+random.shuffle(access_sequence) #all models accessed in random sequence
+
+count_mutations = 0
+while count_mutations < num_mutations:
+    
+    for i in access_sequence: #all models accessed in random sequence
+        evolved = models[i].move() # remember: True -> 1, False -> 0 
+        count_mutations += evolved
+        if count_mutations == num_mutations:
             break
 
 seq2 = ''.join(model.get_state() for model in models)
-print sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2))
+
+print "Hamming distance after %d mutations: %s" % \
+    (num_mutations , hdist(seq0,seq2) )
+print
 
 #%%
 # Punto III
-num_tests = 10
-num_mutations = 100
-vect = []
-for k in range(num_tests):
-    models = [JC69(nuc) for nuc in sequence]
-    counter = 0
 
-    while counter <num_mutations:
-        for i in range(length):
+num_tests = 10
+
+num_mutations = 100
+
+results_list = [] #list to host test results
+
+for k in xrange(num_tests):
+    
+    models = [JC69(nuc) for nuc in seq0]
+    
+    access_sequence = range(length)
+    random.shuffle(access_sequence) #all models accessed in random sequence
+    
+    count_mutations = 0
+    while count_mutations <num_mutations:
+        for i in access_sequence: #all models accessed in random sequence
             evolved = models[i].move()
-            counter += evolved
-            if counter == num_mutations:
+            count_mutations += evolved
+            if count_mutations == num_mutations:
                 break
-    seq2 = ''.join(model.get_state() for model in models)
-    vect.append(sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2)))
-print sum(vect)/num_tests
+    seq3 = ''.join(model.get_state() for model in models)
+    results_list.append(hdist(seq0,seq3))
+    
+print "Avg Hamming distance after %d mutations in %d tests: %.2f +- %.2f" % \
+    (num_mutations, num_tests, np.mean(results_list), np.std(results_list) )
+print 
+
 
 #%%
-
 # Punto IV
-import  numpy as np
 
-num_tests = 30
-total_arr = np.zeros((num_tests,length*5))
+num_tests = 1
 
-for k in range(num_tests):
-    print "Evaluating for %d mutations, test n°: %d" %(length*5, k+1)
-    models = [JC69(nuc) for nuc in sequence]
-    counter = 0
-    while counter < length*5:
-        for i in range(length):
+#num_mutations = int(length*3.1)
+num_mutations = 100
+#numpy array to host test results
+total_arr = np.zeros((num_tests,num_mutations))
+
+for k in xrange(num_tests):
+    print "Test n.: %d for %d mutations" % (k+1,num_mutations)
+    models = [JC69(nuc) for nuc in seq0]
+    count_mutations = 0
+    access_sequence = range(length)
+    random.shuffle(access_sequence) #all models accessed in random sequence
+
+    while count_mutations < num_mutations:
+        for i in access_sequence:
             evolved = models[i].move()
-            counter += evolved
-            if counter == length*5:
+            count_mutations += evolved
+            if count_mutations == num_mutations:
                 break
             if evolved:
-                seq2 = ''.join(model.get_state() for model in models)
-                total_arr[k,counter] = sum(ch1!=ch2 for ch1,ch2 in zip(sequence,seq2))
+                seq4 = ''.join(model.get_state() for model in models)
+                total_arr[k,count_mutations] = hdist(seq0, seq4)
 
-import matplotlib.pyplot as plt
-plot_gen(total_arr)
+
+from MarkovChain import plot_gen
+
+plot_gen(total_arr, length)
+
 ```
 
---->
+
 
 ---
 ## ESERCIZIO XVIII
@@ -172,7 +220,7 @@ Scrivere un programma che:
 Per fare in modo che i numeri siano stampati allineati, usare per ogni numero il costrutto di string formatting come riportato:\\
 `print '%3i' % num`
 
-<!---
+
 ### Soluzione
 
 ```python
@@ -213,4 +261,3 @@ def stampa_matrice(matrix):
 stampa_matrice(matrix)
 ```
 
--->

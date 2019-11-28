@@ -47,6 +47,14 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 </ul>
 ---
 
+#### Dati
+<ul>
+<li>
+	<a href="/python/baby1993.html">Baby 1993</a>
+</li>
+</ul>
+---
+
 ### Problemi con Biopython
 
 Per installare Biopython sono disponibili diverse opzioni:

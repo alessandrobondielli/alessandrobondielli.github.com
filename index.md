@@ -55,6 +55,10 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 <li>
 	<a href="/python/P51787.fasta">P51787</a>
 </li>
+<li>
+	<a href="/python/ls_orchid.gbk">ls_orchid.gbk</a>
+</li>
+
 </ul>
 ---
 

@@ -175,7 +175,7 @@ Si faccia uso della particolare struttura di questo file html:
 ### Soluzione
 Try this as well ;)
 
-<!---
+<!--
 ```python
 import re
 

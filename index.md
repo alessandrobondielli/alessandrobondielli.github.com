@@ -52,6 +52,9 @@ Di seguito potrete trovare una lista delle **esercitazioni** presentate a lezion
 <li>
 	<a href="/python/baby1993.html">Baby 1993</a>
 </li>
+<li>
+	<a href="/python/P51787.fasta">P51787</a>
+</li>
 </ul>
 ---
 

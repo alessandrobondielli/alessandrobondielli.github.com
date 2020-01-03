@@ -126,9 +126,8 @@ Scrivere un programma che usando la libreria [*Biopython*](http://biopython.org/
 4. Si salvino le sequenza filtrate su un nuovo file usando il formato FASTA.
 
 ### Soluzione
-Try it! ;)
 
-<!--
+
 ```python
 from Bio import SeqIO
 from Bio.Seq import Seq
@@ -153,9 +152,9 @@ filtered = filter(lambda l: len(l.seq) < 700, SeqIO.parse('ls_orchid.gbk',format
 # Punto 4
 SeqIO.write(filtered,'ls_orchid.fasta',format='fasta')
 ```
--->
+
 ---
-## ESERCIZIO XXIV
+## ESERCIZIO XXV
 
 Dato un file .html fornito, <a href="/python/baby1993.html" download>`"baby1993.html"`</a>, contenente i nomi più popolari per i bambini nati nel 1990 negli USA, si scriva una funzione
 `estrai_nomi()` che prenda in ingresso il nome del file e ne faccia il parsing, restituendo una lista contenente l'anno come primo elemento
@@ -173,9 +172,7 @@ Si faccia uso della particolare struttura di questo file html:
 ```
 
 ### Soluzione
-Try this as well ;)
 
-<!--
 ```python
 import re
 
@@ -199,4 +196,3 @@ def estrai_nomi(filename):
 
 print estrai_nomi("files/baby1993.html")[0:20]
 ```
--->

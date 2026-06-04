@@ -45,7 +45,7 @@ def fetch():
             authors = [a.strip() for a in raw_authors.split(" and ")] if raw_authors else []
 
             venue = (
-                bib.get("venue")
+                bib.get("citation")
                 or bib.get("journal")
                 or bib.get("booktitle")
                 or ""

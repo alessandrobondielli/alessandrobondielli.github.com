@@ -34,7 +34,7 @@ jobs:
           cache: pip
 
       - name: Install Python dependencies
-        run: pip install scholarly
+        run: pip install -r requirements.txt
 
       - name: Fetch publications from Google Scholar
         id: fetch_pubs

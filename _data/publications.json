@@ -1,1 +1,442 @@
-[]
+[
+  {
+    "title": "An experimental comparison of the most popular approaches to fake news detection",
+    "authors": [],
+    "venue": "",
+    "year": 2026,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "ExpliCa: Evaluating explicit causal reasoning in large language models",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 18,
+    "url": ""
+  },
+  {
+    "title": "MAIA: A benchmark for multimodal AI assessment",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 1,
+    "url": ""
+  },
+  {
+    "title": "All-in-one: Understanding and Generation in Multimodal Reasoning with the MAIA Benchmark",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 1,
+    "url": ""
+  },
+  {
+    "title": "CLASS-IT: Conversational and Lecture-Aligned Small-Scale Instruction Tuning for BabyLMs",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Enhancing Debunking Effectiveness Through LLM-Based Personality Adaptation",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "An NLP-Based Approach for Surgical Site Infection Surveillance Using Hospital Discharge Letters",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Charting a Decade of Computational Linguistics in Italy: The CLiC-it Corpus",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Investigating Time-Scales in Deep Echo State Networks for Natural Language Processing",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Seeing Cause and Time: a Visually Grounded Evaluation of Multimodal Models",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "LLMs Struggle on Explicit Causality in Italian",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Sparse Autoencoders Find Partially Interpretable Features in Italian Small Language Models",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Prompting encoder models for zero-shot classification: a cross-domain study in Italian: S. Auriemma et al.",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Un approccio basato su NLP per la sorveglianza delle infezioni del sito chirurgico utilizzando le lettere di dimissione ospedaliera",
+    "authors": [],
+    "venue": "",
+    "year": 2025,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Dataset for multimodal fake news detection and verification tasks",
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "citations": 15,
+    "url": ""
+  },
+  {
+    "title": "ConcreteGPT: A baby GPT-2 based on lexical concreteness and curriculum learning",
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "citations": 4,
+    "url": ""
+  },
+  {
+    "title": "Lost in Disambiguation: How Instruction-Tuned LLMs Master Lexical Ambiguity",
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "citations": 2,
+    "url": ""
+  },
+  {
+    "title": "Representing Abstract Concepts with Images: An Investigation with Large Language Models",
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "citations": 2,
+    "url": ""
+  },
+  {
+    "title": "Exploring Latin Epigraphy with Distributional Semantic Models: a Pilot Study",
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Evaluation of event plausibility recognition in Large (Vision)-Language Models",
+    "authors": [],
+    "venue": "",
+    "year": 2024,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Multi-fake-detective at EVALITA 2023: Overview of the multimodal fake news detection and verification task",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 28,
+    "url": ""
+  },
+  {
+    "title": "From basic approaches to novel challenges and applications in Sequential Pattern Mining",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 11,
+    "url": ""
+  },
+  {
+    "title": "BureauBERTo: adapting UmBERTo to the Italian bureaucratic language",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 9,
+    "url": ""
+  },
+  {
+    "title": "Assessing language and vision-language models on event plausibility",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 3,
+    "url": ""
+  },
+  {
+    "title": "A system to support readers in automatically acquiring complete summarized information on an event from different sources",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 2,
+    "url": ""
+  },
+  {
+    "title": "A System for Assisting Users in Automatically Obtaining Comprehensive and Condensed Information About an Event from Various Sources",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Challenging specialized transformers on zero-shot classification",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Leveraging Sequence Mining for Robot",
+    "authors": [],
+    "venue": "",
+    "year": 2023,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "In-context annotation of topic-oriented datasets of fake news: A case study on the notre-dame fire event",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 16,
+    "url": ""
+  },
+  {
+    "title": "Evaluating pre-trained transformers on italian administrative texts",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 6,
+    "url": ""
+  },
+  {
+    "title": "Online monitoring of stance from tweets: The case of green pass in Italy",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 5,
+    "url": ""
+  },
+  {
+    "title": "A news-based framework for uncovering and tracking city area profiles: assessment in Covid-19 setting",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 4,
+    "url": ""
+  },
+  {
+    "title": "Leveraging sequence mining for robot process automation",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 2,
+    "url": ""
+  },
+  {
+    "title": "Mate, a meta layer between natural language and database",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 2,
+    "url": ""
+  },
+  {
+    "title": "Responsible Artificial Intelligence as a Driver of Innovation in Society and Industry",
+    "authors": [],
+    "venue": "",
+    "year": 2022,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Addressing event-driven concept drift in twitter stream: a stance detection application",
+    "authors": [],
+    "venue": "",
+    "year": 2021,
+    "citations": 40,
+    "url": ""
+  },
+  {
+    "title": "Leveraging clip for image emotion recognition",
+    "authors": [],
+    "venue": "",
+    "year": 2021,
+    "citations": 30,
+    "url": ""
+  },
+  {
+    "title": "On the use of summarization and transformer architectures for profiling résumés",
+    "authors": [],
+    "venue": "",
+    "year": 2021,
+    "citations": 22,
+    "url": ""
+  },
+  {
+    "title": "Mining the Stream of News for City Areas Profiling: a Case Study for the City of Rome",
+    "authors": [],
+    "venue": "",
+    "year": 2021,
+    "citations": 1,
+    "url": ""
+  },
+  {
+    "title": "Combining natural language processing and machine learning for profiling and fake news detection",
+    "authors": [],
+    "venue": "",
+    "year": 2021,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "UNIPI-NLE at CheckThat! 2020: Approaching fact checking from a sentence similarity perspective through the lens of transformers",
+    "authors": [],
+    "venue": "",
+    "year": 2020,
+    "citations": 25,
+    "url": ""
+  },
+  {
+    "title": "Exploiting categorization of online news for profiling city areas",
+    "authors": [],
+    "venue": "",
+    "year": 2020,
+    "citations": 10,
+    "url": ""
+  },
+  {
+    "title": "CAPISCO@ CONcreTEXT 2020:(Un) supervised Systems to Contextualize Concreteness with Norming Data",
+    "authors": [],
+    "venue": "",
+    "year": 2020,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "A survey on fake news and rumour detection techniques",
+    "authors": [],
+    "venue": "",
+    "year": 2019,
+    "citations": 856,
+    "url": ""
+  },
+  {
+    "title": "A data-driven approach to automatic extraction of professional figure profiles from Résumés",
+    "authors": [],
+    "venue": "",
+    "year": 2019,
+    "citations": 15,
+    "url": ""
+  },
+  {
+    "title": "Proceedings of the Fifth Italian Conference on Computational Linguistics CLiC-it 2018: 10-12 December 2018, Torino",
+    "authors": [],
+    "venue": "",
+    "year": 2019,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "CoreNLP-it: A UD pipeline for Italian based on Stanford CoreNLP",
+    "authors": [],
+    "venue": "",
+    "year": 2018,
+    "citations": 8,
+    "url": ""
+  },
+  {
+    "title": "Proceedings of the Fifth Italian Conference on Computational Linguistics (CLiC-it 2018)",
+    "authors": [],
+    "venue": "",
+    "year": 2018,
+    "citations": 1,
+    "url": ""
+  },
+  {
+    "title": "Learning affect with distributional semantic models",
+    "authors": [],
+    "venue": "",
+    "year": 2017,
+    "citations": 8,
+    "url": ""
+  },
+  {
+    "title": "Emo2val: Inferring valence scores from fine-grained emotion values",
+    "authors": [],
+    "venue": "",
+    "year": 2017,
+    "citations": 4,
+    "url": ""
+  },
+  {
+    "title": "FB-NEWS15: A topic-annotated Facebook corpus for emotion detection and sentiment analysis",
+    "authors": [],
+    "venue": "",
+    "year": 2016,
+    "citations": 9,
+    "url": ""
+  },
+  {
+    "title": "Da Facebook a Twitter: Creazione e utilizzo di una risorsa lessicale emotiva per la sentiment analysis di tweet",
+    "authors": [],
+    "venue": "",
+    "year": 2016,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "Exploiting Emotive Features for the Sentiment Polarity Classification of tweets",
+    "authors": [],
+    "venue": "",
+    "year": 2016,
+    "citations": 0,
+    "url": ""
+  },
+  {
+    "title": "You are what you do. An empirical characterization of the semantic content of the thematic roles for a group of Italian verbs",
+    "authors": [],
+    "venue": "",
+    "year": 2015,
+    "citations": 9,
+    "url": ""
+  },
+  {
+    "title": "Universita di Pisa",
+    "authors": [],
+    "venue": "",
+    "year": null,
+    "citations": 0,
+    "url": ""
+  }
+]

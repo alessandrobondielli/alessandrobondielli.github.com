@@ -6,11 +6,7 @@ Usage:
     pip install scholarly
     python _scripts/fetch_scholar.py
 
-Strategy: fill the author profile once (gets titles, years, venues, citation
-counts, URLs) — do NOT fill individual publications, which makes one extra
-HTTP request per paper and is what causes the long hangs.
-Author lists are not available via this faster path; they can be added
-manually to the JSON if needed.
+Run locally — Google blocks cloud/CI IP ranges so this is never run in CI.
 """
 
 import json
@@ -20,11 +16,11 @@ from pathlib import Path
 
 SCHOLAR_ID = "zcXQk6YAAAAJ"
 OUTPUT = Path(__file__).parent.parent / "_data" / "publications.json"
-TIMEOUT_SECONDS = 60
+TIMEOUT_SECONDS = 120
 
 
 def _timeout_handler(signum, frame):
-    raise TimeoutError("Google Scholar fetch exceeded time limit")
+    raise TimeoutError(f"Timed out after {TIMEOUT_SECONDS}s")
 
 
 def fetch():
@@ -34,35 +30,49 @@ def fetch():
     signal.alarm(TIMEOUT_SECONDS)
 
     try:
-        print(f"Fetching profile for Scholar ID: {SCHOLAR_ID} …")
+        print(f"Fetching profile for {SCHOLAR_ID} …")
         author = scholarly.search_author_id(SCHOLAR_ID)
         author = scholarly.fill(author, sections=["publications"])
 
         pubs = []
-        for pub in author.get("publications", []):
-            bib = pub.get("bib", {})
+        total = len(author.get("publications", []))
+
+        for i, pub in enumerate(author["publications"], 1):
+            filled = scholarly.fill(pub)
+            bib = filled.get("bib", {})
+
+            raw_authors = bib.get("author", "")
+            authors = [a.strip() for a in raw_authors.split(" and ")] if raw_authors else []
+
             venue = (
                 bib.get("venue")
                 or bib.get("journal")
                 or bib.get("booktitle")
                 or ""
             )
+
+            try:
+                bibtex = scholarly.bibtex(filled)
+            except Exception:
+                bibtex = ""
+
             entry = {
                 "title":     bib.get("title", ""),
-                "authors":   [],   # not available without per-paper fill
+                "authors":   authors,
                 "venue":     venue,
                 "year":      int(bib["pub_year"]) if bib.get("pub_year") else None,
-                "citations": pub.get("num_citations", 0),
-                "url":       pub.get("pub_url", ""),
+                "citations": filled.get("num_citations", 0),
+                "url":       filled.get("pub_url", ""),
+                "bibtex":    bibtex,
             }
             pubs.append(entry)
-            print(f"  {entry['year']}  {entry['title'][:70]}")
+            print(f"  [{i}/{total}] {entry['title'][:70]}")
 
         signal.alarm(0)
 
-    except TimeoutError:
+    except TimeoutError as e:
         signal.alarm(0)
-        print(f"WARNING: timed out after {TIMEOUT_SECONDS}s — saving partial results.")
+        print(f"WARNING: {e} — saving {len(pubs)} partial results.")
 
     pubs.sort(key=lambda x: (x["year"] or 0, x["citations"]), reverse=True)
     return pubs

@@ -324,7 +324,18 @@ blockquote {
   transition: background 0.15s, color 0.15s;
 }
 .pub-link:hover { background: var(--color-primary); color: #fff; text-decoration: none; }
+.pub-link--muted { color: var(--color-text-muted); border-color: var(--color-border); cursor: default; }
+.pub-link--muted:hover { background: none; color: var(--color-text-muted); }
+.pub-cite-btn { background: none; cursor: pointer; font-family: var(--font-sans); }
 .pub-note { margin-top: 1rem; padding: 1rem; background: var(--color-primary-light); border-radius: 6px; font-size: 0.875rem; color: var(--color-primary-dark); }
+
+/* BibTeX block */
+.pub-bibtex-block { margin-top: 0.875rem; border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; }
+.pub-bibtex-toolbar { display: flex; justify-content: space-between; align-items: center; padding: 0.4rem 0.875rem; background: var(--color-bg-subtle); border-bottom: 1px solid var(--color-border); }
+.pub-bibtex-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); }
+.pub-bibtex-copy { background: none; border: 1px solid var(--color-border); border-radius: 4px; padding: 0.15rem 0.5rem; font-size: 0.72rem; font-weight: 600; cursor: pointer; color: var(--color-text-muted); font-family: var(--font-sans); transition: color 0.15s, border-color 0.15s; }
+.pub-bibtex-copy:hover { color: var(--color-primary); border-color: var(--color-primary); }
+.pub-bibtex-pre { margin: 0; border-radius: 0; border: none; font-size: 0.78rem; line-height: 1.55; padding: 0.875rem; overflow-x: auto; background: var(--color-bg); }
 
 
 /* ============================================================

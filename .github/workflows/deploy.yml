@@ -3,12 +3,10 @@ name: Build and Deploy
 on:
   push:
     branches: [master]
-  schedule:
-    - cron: '0 6 * * 1'   # refresh publications every Monday at 06:00 UTC
-  workflow_dispatch:       # allow manual trigger from the Actions tab
+  workflow_dispatch:
 
 permissions:
-  contents: write          # needed to commit updated publications.json
+  contents: read
   pages: write
   id-token: write
 
@@ -17,39 +15,10 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: pip
-
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
-
-      - name: Fetch publications from Google Scholar
-        id: fetch_pubs
-        run: python _scripts/fetch_scholar.py
-        continue-on-error: true   # build still succeeds if Scholar is rate-limited
-
-      - name: Commit updated publications (if changed)
-        if: steps.fetch_pubs.outcome == 'success'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add _data/publications.json
-          git diff --cached --quiet || git commit -m "chore: update publications from Google Scholar [skip ci]"
-          git push
-        continue-on-error: true
+      - uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -67,6 +36,13 @@ jobs:
         with:
           path: _site
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -6,65 +6,83 @@ Usage:
     pip install scholarly
     python _scripts/fetch_scholar.py
 
-The output file is committed to the repo so the site builds correctly even
-when Scholar is temporarily unreachable (e.g. rate-limited in CI).
+Strategy: fill the author profile once (gets titles, years, venues, citation
+counts, URLs) — do NOT fill individual publications, which makes one extra
+HTTP request per paper and is what causes the long hangs.
+Author lists are not available via this faster path; they can be added
+manually to the JSON if needed.
 """
 
 import json
+import signal
 import sys
 from pathlib import Path
 
 SCHOLAR_ID = "zcXQk6YAAAAJ"
 OUTPUT = Path(__file__).parent.parent / "_data" / "publications.json"
+TIMEOUT_SECONDS = 60
+
+
+def _timeout_handler(signum, frame):
+    raise TimeoutError("Google Scholar fetch exceeded time limit")
 
 
 def fetch():
+    from scholarly import scholarly
+
+    signal.signal(signal.SIGALRM, _timeout_handler)
+    signal.alarm(TIMEOUT_SECONDS)
+
     try:
-        from scholarly import scholarly
-    except ImportError:
-        print("ERROR: run  pip install scholarly  first.", file=sys.stderr)
-        sys.exit(1)
+        print(f"Fetching profile for Scholar ID: {SCHOLAR_ID} …")
+        author = scholarly.search_author_id(SCHOLAR_ID)
+        author = scholarly.fill(author, sections=["publications"])
 
-    print(f"Fetching author profile for {SCHOLAR_ID} …")
-    author = scholarly.search_author_id(SCHOLAR_ID)
-    author = scholarly.fill(author, sections=["publications"])
+        pubs = []
+        for pub in author.get("publications", []):
+            bib = pub.get("bib", {})
+            venue = (
+                bib.get("venue")
+                or bib.get("journal")
+                or bib.get("booktitle")
+                or ""
+            )
+            entry = {
+                "title":     bib.get("title", ""),
+                "authors":   [],   # not available without per-paper fill
+                "venue":     venue,
+                "year":      int(bib["pub_year"]) if bib.get("pub_year") else None,
+                "citations": pub.get("num_citations", 0),
+                "url":       pub.get("pub_url", ""),
+            }
+            pubs.append(entry)
+            print(f"  {entry['year']}  {entry['title'][:70]}")
 
-    pubs = []
-    total = len(author.get("publications", []))
-    for i, pub in enumerate(author["publications"], 1):
-        filled = scholarly.fill(pub)
-        bib = filled.get("bib", {})
+        signal.alarm(0)
 
-        # Normalise author string: scholarly uses " and " as separator
-        raw_authors = bib.get("author", "")
-        authors = [a.strip() for a in raw_authors.split(" and ")] if raw_authors else []
+    except TimeoutError:
+        signal.alarm(0)
+        print(f"WARNING: timed out after {TIMEOUT_SECONDS}s — saving partial results.")
 
-        venue = (
-            bib.get("venue")
-            or bib.get("journal")
-            or bib.get("booktitle")
-            or ""
-        )
-
-        entry = {
-            "title":     bib.get("title", ""),
-            "authors":   authors,
-            "venue":     venue,
-            "year":      int(bib["pub_year"]) if bib.get("pub_year") else None,
-            "citations": filled.get("num_citations", 0),
-            "url":       filled.get("pub_url", ""),
-        }
-        pubs.append(entry)
-        print(f"  [{i}/{total}] {entry['title'][:70]}")
-
-    # Sort: newest first, then by citation count
     pubs.sort(key=lambda x: (x["year"] or 0, x["citations"]), reverse=True)
     return pubs
 
 
 def main():
     OUTPUT.parent.mkdir(exist_ok=True)
+
+    try:
+        from scholarly import scholarly  # noqa: F401
+    except ImportError:
+        print("ERROR: run  pip install scholarly  first.", file=sys.stderr)
+        sys.exit(1)
+
     pubs = fetch()
+
+    if not pubs:
+        print("No publications fetched — leaving existing file unchanged.")
+        sys.exit(0)
+
     with open(OUTPUT, "w", encoding="utf-8") as f:
         json.dump(pubs, f, indent=2, ensure_ascii=False)
     print(f"\nSaved {len(pubs)} publications → {OUTPUT}")

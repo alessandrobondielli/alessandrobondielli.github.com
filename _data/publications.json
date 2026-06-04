@@ -1,442 +1,937 @@
 [
   {
     "title": "An experimental comparison of the most popular approaches to fake news detection",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Pietro Dell’Oglio",
+      "Alessandro Bondielli",
+      "Francesco Marcelloni",
+      "Lucia C Passaro"
+    ],
+    "venue": "Information Sciences",
     "year": 2026,
     "citations": 0,
-    "url": ""
+    "url": "https://www.sciencedirect.com/science/article/pii/S0020025526003385",
+    "bibtex": ""
   },
   {
     "title": "ExpliCa: Evaluating explicit causal reasoning in large language models",
-    "authors": [],
+    "authors": [
+      "Martina Miliani",
+      "Serena Auriemma",
+      "Alessandro Bondielli",
+      "Emmanuele Chersoni",
+      "Lucia Passaro",
+      "Irene Sucameli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 18,
-    "url": ""
+    "url": "https://aclanthology.org/2025.findings-acl.891/",
+    "bibtex": ""
   },
   {
     "title": "MAIA: A benchmark for multimodal AI assessment",
-    "authors": [],
+    "authors": [
+      "Davide Testa",
+      "Giovanni Bonetta",
+      "Raffaella Bernardi",
+      "Alessandro Bondielli",
+      "Alessandro Lenci",
+      "Alessio Miaschi",
+      "Lucia C Passaro",
+      "Bernardo Magnini"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 1,
-    "url": ""
+    "url": "https://aclanthology.org/2025.clicit-1.106.pdf",
+    "bibtex": ""
   },
   {
     "title": "All-in-one: Understanding and Generation in Multimodal Reasoning with the MAIA Benchmark",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Davide Testa",
+      "Giovanni Bonetta",
+      "Raffaella Bernardi",
+      "Alessandro Bondielli",
+      "Alessandro Lenci",
+      "Alessio Miaschi",
+      "Lucia Passaro",
+      "Bernardo Magnini"
+    ],
+    "venue": "arXiv preprint arXiv:2502.16989",
     "year": 2025,
     "citations": 1,
-    "url": ""
+    "url": "https://aclanthology.org/anthology-files/anthology-files/pdf/findings/2025.findings-emnlp.1091.pdf",
+    "bibtex": ""
   },
   {
     "title": "CLASS-IT: Conversational and Lecture-Aligned Small-Scale Instruction Tuning for BabyLMs",
-    "authors": [],
+    "authors": [
+      "Luca Capone",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://aclanthology.org/2025.babylm-main.30/",
+    "bibtex": ""
   },
   {
     "title": "Enhancing Debunking Effectiveness Through LLM-Based Personality Adaptation",
-    "authors": [],
+    "authors": [
+      "Pietro Dell’ Oglio",
+      "Alessandro Bondielli",
+      "Francesco Marcelloni",
+      "Lucia C Passaro"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-15632-7_23",
+    "bibtex": ""
   },
   {
     "title": "An NLP-Based Approach for Surgical Site Infection Surveillance Using Hospital Discharge Letters",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "G Arzilli",
+      "F Baglivo",
+      "L De Angelis",
+      "V Casigliani",
+      "A Renda",
+      "A Bondielli",
+      "P Dell",
+      "V Acampora",
+      "F Marcelloni",
+      "C Rizzo"
+    ],
+    "venue": "European Journal of Public Health",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://search.proquest.com/openview/9bb6d725d87b0560f504a210e357298e/1?pq-origsite=gscholar&cbl=29883",
+    "bibtex": ""
   },
   {
     "title": "Charting a Decade of Computational Linguistics in Italy: The CLiC-it Corpus",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Chiara Alzetta",
+      "Serena Auriemma",
+      "Alessandro Bondielli",
+      "Luca Dini",
+      "Chiara Fazzone",
+      "Alessio Miaschi",
+      "Martina Miliani",
+      "Marta Sartor"
+    ],
+    "venue": "arXiv preprint arXiv:2509.19033",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://arxiv.org/abs/2509.19033",
+    "bibtex": ""
   },
   {
     "title": "Investigating Time-Scales in Deep Echo State Networks for Natural Language Processing",
-    "authors": [],
+    "authors": [
+      "Corrado Baccheschi",
+      "Alessandro Bondielli",
+      "Alessandro Lenci",
+      "Alessio Micheli",
+      "Lucia Passaro",
+      "Marco Podda",
+      "Domenico Tortorella"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-04552-2_18",
+    "bibtex": ""
   },
   {
     "title": "Seeing Cause and Time: a Visually Grounded Evaluation of Multimodal Models",
-    "authors": [],
+    "authors": [
+      "Salvatore Ergoli",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://aclanthology.org/2025.clicit-1.42.pdf",
+    "bibtex": ""
   },
   {
     "title": "LLMs Struggle on Explicit Causality in Italian",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Martina Miliani",
+      "Luca Paglione",
+      "Serena Auriemma",
+      "Lucia C Passaro",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://aclanthology.org/2025.clicit-1.10.pdf",
+    "bibtex": ""
   },
   {
     "title": "Sparse Autoencoders Find Partially Interpretable Features in Italian Small Language Models",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Lucia C Passaro",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://aclanthology.org/2025.clicit-1.11.pdf",
+    "bibtex": ""
   },
   {
     "title": "Prompting encoder models for zero-shot classification: a cross-domain study in Italian: S. Auriemma et al.",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Serena Auriemma",
+      "Martina Miliani",
+      "Mauro Madeddu",
+      "Alessandro Bondielli",
+      "Lucia Passaro",
+      "Alessandro Lenci"
+    ],
+    "venue": "Language Resources and Evaluation",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://link.springer.com/article/10.1007/s10579-025-09853-0",
+    "bibtex": ""
   },
   {
     "title": "Un approccio basato su NLP per la sorveglianza delle infezioni del sito chirurgico utilizzando le lettere di dimissione ospedaliera",
-    "authors": [],
+    "authors": [
+      "Filippo Tosi",
+      "Guglielmo Arzilli",
+      "Francesco Baglivo",
+      "Serena Fondelli",
+      "Alessandro Renda",
+      "Alessandro Bondielli",
+      "Pietro Dell’Oglio",
+      "Vittoria Acampora",
+      "Francesco Marcelloni",
+      "Caterina Rizzo"
+    ],
     "venue": "",
     "year": 2025,
     "citations": 0,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1329807",
+    "bibtex": ""
   },
   {
     "title": "Dataset for multimodal fake news detection and verification tasks",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessandro Bondielli",
+      "Pietro Dell'Oglio",
+      "Alessandro Lenci",
+      "Francesco Marcelloni",
+      "Lucia Passaro"
+    ],
+    "venue": "Data in Brief",
     "year": 2024,
     "citations": 15,
-    "url": ""
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352340924004098",
+    "bibtex": ""
   },
   {
     "title": "ConcreteGPT: A baby GPT-2 based on lexical concreteness and curriculum learning",
-    "authors": [],
+    "authors": [
+      "Luca Capone",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2024,
     "citations": 4,
-    "url": ""
+    "url": "https://aclanthology.org/2024.conll-babylm.16/",
+    "bibtex": ""
   },
   {
     "title": "Lost in Disambiguation: How Instruction-Tuned LLMs Master Lexical Ambiguity",
-    "authors": [],
+    "authors": [
+      "Luca Capone",
+      "Serena Auriemma",
+      "Martina Miliani",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2024,
     "citations": 2,
-    "url": ""
+    "url": "https://aclanthology.org/2024.clicit-1.19/",
+    "bibtex": ""
   },
   {
     "title": "Representing Abstract Concepts with Images: An Investigation with Large Language Models",
-    "authors": [],
+    "authors": [
+      "Ludovica Cerini",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2024,
     "citations": 2,
-    "url": ""
+    "url": "https://aclanthology.org/2024.cogalex-1.12/",
+    "bibtex": ""
   },
   {
     "title": "Exploring Latin Epigraphy with Distributional Semantic Models: a Pilot Study",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Lucia Tamponi",
+      "Alessandro Bondielli"
+    ],
+    "venue": "Studi e Saggi Linguistici",
     "year": 2024,
     "citations": 0,
-    "url": ""
+    "url": "https://www.studiesaggilinguistici.it/ssl/article/view/395",
+    "bibtex": ""
   },
   {
     "title": "Evaluation of event plausibility recognition in Large (Vision)-Language Models",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Maria Cassese",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
+    "venue": "IJCoL. Italian Journal of Computational Linguistics",
     "year": 2024,
     "citations": 0,
-    "url": ""
+    "url": "https://journals.openedition.org/ijcol/1422",
+    "bibtex": ""
   },
   {
     "title": "Multi-fake-detective at EVALITA 2023: Overview of the multimodal fake news detection and verification task",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Pietro Dell’Oglio",
+      "Alessandro Lenci",
+      "Francesco Marcelloni",
+      "Lucia C Passaro",
+      "Marco Sabbatini"
+    ],
     "venue": "",
     "year": 2023,
     "citations": 28,
-    "url": ""
+    "url": "https://books.google.com/books?hl=en&lr=&id=8PMtEQAAQBAJ&oi=fnd&pg=PA227&dq=info:QPaWAH8IUUsJ:scholar.google.com&ots=GT480NVzwd&sig=AhFnu_WIZ4-9vC3rtD_jc1TkqPA",
+    "bibtex": ""
   },
   {
     "title": "From basic approaches to novel challenges and applications in Sequential Pattern Mining",
-    "authors": [],
+    "authors": [
+      "Alessio Bechini",
+      "Alessandro Bondielli",
+      "Pietro Dell'Oglio",
+      "Francesco Marcelloni"
+    ],
     "venue": "",
     "year": 2023,
     "citations": 11,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1172332",
+    "bibtex": ""
   },
   {
     "title": "BureauBERTo: adapting UmBERTo to the Italian bureaucratic language",
-    "authors": [],
+    "authors": [
+      "Serena Auriemma",
+      "Mauro Madeddu",
+      "Martina Miliani",
+      "Alessandro Bondielli",
+      "Lucia C Passaro",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2023,
     "citations": 9,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1205508",
+    "bibtex": ""
   },
   {
     "title": "Assessing language and vision-language models on event plausibility",
-    "authors": [],
+    "authors": [
+      "Maria Cassese",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2023,
     "citations": 3,
-    "url": ""
+    "url": "https://aclanthology.org/2023.clicit-1.16.pdf",
+    "bibtex": ""
   },
   {
     "title": "A system to support readers in automatically acquiring complete summarized information on an event from different sources",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Pietro Dell’Oglio",
+      "Alessandro Bondielli",
+      "Francesco Marcelloni"
+    ],
+    "venue": "Algorithms",
     "year": 2023,
     "citations": 2,
-    "url": ""
+    "url": "https://www.mdpi.com/1999-4893/16/11/513",
+    "bibtex": ""
   },
   {
     "title": "A System for Assisting Users in Automatically Obtaining Comprehensive and Condensed Information About an Event from Various Sources",
-    "authors": [],
+    "authors": [
+      "Pietro Dell’Oglio",
+      "Alessandro Bondielli",
+      "Francesco Marcelloni"
+    ],
     "venue": "",
     "year": 2023,
     "citations": 0,
-    "url": ""
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-64847-2_45",
+    "bibtex": ""
   },
   {
     "title": "Challenging specialized transformers on zero-shot classification",
-    "authors": [],
+    "authors": [
+      "Serena Auriemma",
+      "Mauro Madeddu",
+      "Martina Miliani",
+      "Alessandro Bondielli",
+      "Alessandro Lenci",
+      "Lucia Passaro"
+    ],
     "venue": "",
     "year": 2023,
     "citations": 0,
-    "url": ""
+    "url": "https://aclanthology.org/2023.clicit-1.8.pdf",
+    "bibtex": ""
   },
   {
     "title": "Leveraging Sequence Mining for Robot",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Pietro Dell'Ogliol",
+      "Alessandro Bondielli",
+      "Alessio Bechini"
+    ],
+    "venue": "Intelligent Systems Design and Applications: 22nd International Conference on Intelligent Systems Design and Applications (ISDA 2022) Held December 12-14, 2022-Volume 4",
     "year": 2023,
     "citations": 0,
-    "url": ""
+    "url": "https://books.google.com/books?hl=en&lr=&id=CSvCEAAAQBAJ&oi=fnd&pg=PA224&dq=info:gp3YDFTXX38J:scholar.google.com&ots=qqVKdLhFr8&sig=7vF1pFO-1Ry5OY3TaUJQnxQopm0",
+    "bibtex": ""
   },
   {
     "title": "In-context annotation of topic-oriented datasets of fake news: A case study on the notre-dame fire event",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Lucia C Passaro",
+      "Alessandro Bondielli",
+      "Pietro Dell’Oglio",
+      "Alessandro Lenci",
+      "Francesco Marcelloni"
+    ],
+    "venue": "Information Sciences",
     "year": 2022,
     "citations": 16,
-    "url": ""
+    "url": "https://www.sciencedirect.com/science/article/pii/S0020025522008167",
+    "bibtex": ""
   },
   {
     "title": "Evaluating pre-trained transformers on italian administrative texts",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Serena Auriemma",
+      "Martina Miliani",
+      "Alessandro Bondielli",
+      "Lucia C Passaro",
+      "Alessandro Lenci"
+    ],
+    "venue": "CEUR WORKSHOP PROCEEDINGS",
     "year": 2022,
     "citations": 6,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1160772",
+    "bibtex": ""
   },
   {
     "title": "Online monitoring of stance from tweets: The case of green pass in Italy",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Giuseppe Cancello Tortora",
+      "Pietro Ducange",
+      "Armando Macri",
+      "Francesco Marcelloni",
+      "Alessandro Renda"
+    ],
     "venue": "",
     "year": 2022,
     "citations": 5,
-    "url": ""
+    "url": "https://ieeexplore.ieee.org/abstract/document/9787753/",
+    "bibtex": ""
   },
   {
     "title": "A news-based framework for uncovering and tracking city area profiles: assessment in Covid-19 setting",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessio Bechini",
+      "Alessandro Bondielli",
+      "José Luis Corcuera Bárcena",
+      "Pietro Ducange",
+      "Francesco Marcelloni",
+      "Alessandro Renda"
+    ],
+    "venue": "ACM Transactions on Knowledge Discovery from Data (TKDD)",
     "year": 2022,
     "citations": 4,
-    "url": ""
+    "url": "https://dl.acm.org/doi/abs/10.1145/3532186",
+    "bibtex": ""
   },
   {
     "title": "Leveraging sequence mining for robot process automation",
-    "authors": [],
+    "authors": [
+      "Pietro Dell’Oglio",
+      "Alessandro Bondielli",
+      "Alessio Bechini",
+      "Francesco Marcelloni"
+    ],
     "venue": "",
     "year": 2022,
     "citations": 2,
-    "url": ""
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-35510-3_22",
+    "bibtex": ""
   },
   {
     "title": "Mate, a meta layer between natural language and database",
-    "authors": [],
+    "authors": [
+      "Irene Sucameli",
+      "Alessandro Bondielli",
+      "Lucia C Passaro",
+      "Edoardo Annunziata",
+      "Giulia Lucherini",
+      "Andrea Romei",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2022,
     "citations": 2,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1160768",
+    "bibtex": ""
   },
   {
     "title": "Responsible Artificial Intelligence as a Driver of Innovation in Society and Industry",
-    "authors": [],
+    "authors": [
+      "Alessio Bechini",
+      "Alessandro Bondielli",
+      "Pietro Ducange",
+      "Francesco Marcelloni",
+      "Alessandro Renda"
+    ],
     "venue": "",
     "year": 2022,
     "citations": 0,
-    "url": ""
+    "url": "https://drive.google.com/file/d/1kHDZugZ4mqA4-BtSIDwoKiiooLtqzaMb/view",
+    "bibtex": ""
   },
   {
     "title": "Addressing event-driven concept drift in twitter stream: a stance detection application",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessio Bechini",
+      "Alessandro Bondielli",
+      "Pietro Ducange",
+      "Francesco Marcelloni",
+      "Alessandro Renda"
+    ],
+    "venue": "IEEE Access",
     "year": 2021,
     "citations": 40,
-    "url": ""
+    "url": "https://ieeexplore.ieee.org/abstract/document/9440387/",
+    "bibtex": ""
   },
   {
     "title": "Leveraging clip for image emotion recognition",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessandro Bondielli",
+      "Lucia C Passaro"
+    ],
+    "venue": "Ceur workshop proceedings",
     "year": 2021,
     "citations": 30,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1113566",
+    "bibtex": ""
   },
   {
     "title": "On the use of summarization and transformer architectures for profiling résumés",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessandro Bondielli",
+      "Francesco Marcelloni"
+    ],
+    "venue": "Expert Systems with Applications",
     "year": 2021,
     "citations": 22,
-    "url": ""
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417421009301",
+    "bibtex": ""
   },
   {
     "title": "Mining the Stream of News for City Areas Profiling: a Case Study for the City of Rome",
-    "authors": [],
+    "authors": [
+      "Alessio Bechini",
+      "Alessandro Bondielli",
+      "José Luis Corcuera Bárcena",
+      "Pietro Ducange",
+      "Francesco Marcelloni",
+      "Alessandro Renda"
+    ],
     "venue": "",
     "year": 2021,
     "citations": 1,
-    "url": ""
+    "url": "https://ieeexplore.ieee.org/abstract/document/9556313/",
+    "bibtex": ""
   },
   {
     "title": "Combining natural language processing and machine learning for profiling and fake news detection",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli"
+    ],
     "venue": "",
     "year": 2021,
     "citations": 0,
-    "url": ""
+    "url": "https://tesidottorato.depositolegale.it/bitstream/20.500.14242/185574/1/PhDThesis_AlessandroBondielli.pdf",
+    "bibtex": ""
   },
   {
     "title": "UNIPI-NLE at CheckThat! 2020: Approaching fact checking from a sentence similarity perspective through the lens of transformers",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Lucia Passaro",
+      "Alessandro Bondielli",
+      "Alessandro Lenci",
+      "Francesco Marcelloni"
+    ],
+    "venue": "CEUR Workshop Proceedings",
     "year": 2020,
     "citations": 25,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1067421",
+    "bibtex": ""
   },
   {
     "title": "Exploiting categorization of online news for profiling city areas",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Pietro Ducange",
+      "Francesco Marcelloni"
+    ],
     "venue": "",
     "year": 2020,
     "citations": 10,
-    "url": ""
+    "url": "https://ieeexplore.ieee.org/abstract/document/9122777/",
+    "bibtex": ""
   },
   {
     "title": "CAPISCO@ CONcreTEXT 2020:(Un) supervised Systems to Contextualize Concreteness with Norming Data",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessandro Bondielli",
+      "Gianluca E Lebani",
+      "Lucia Passaro",
+      "Alessandro Lenci"
+    ],
+    "venue": "CEUR WORKSHOP PROCEEDINGS",
     "year": 2020,
     "citations": 0,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/1069968",
+    "bibtex": ""
   },
   {
     "title": "A survey on fake news and rumour detection techniques",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Alessandro Bondielli",
+      "Francesco Marcelloni"
+    ],
+    "venue": "Information sciences",
     "year": 2019,
     "citations": 856,
-    "url": ""
+    "url": "https://www.sciencedirect.com/science/article/pii/S0020025519304372",
+    "bibtex": ""
   },
   {
     "title": "A data-driven approach to automatic extraction of professional figure profiles from Résumés",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Francesco Marcelloni"
+    ],
     "venue": "",
     "year": 2019,
     "citations": 15,
-    "url": ""
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-33607-3_18",
+    "bibtex": ""
   },
   {
     "title": "Proceedings of the Fifth Italian Conference on Computational Linguistics CLiC-it 2018: 10-12 December 2018, Torino",
-    "authors": [],
+    "authors": [
+      "Ekaterina Abramova",
+      "Giovanni Adorni",
+      "Ruchit Agrawal",
+      "Laura Aina",
+      "Teresa Albanese",
+      "Davide Albanesi",
+      "Chiara Alzetta",
+      "Matteo Amore",
+      "Oronzo Antonelli",
+      "Alessio Palmero Aprosio",
+      "Vevake Balaraman",
+      "Pierpaolo Basile",
+      "Valerio Basile",
+      "Roberto Basili",
+      "Elisa Bassignana",
+      "Andrea Bellandi",
+      "Luisa Bentivogli",
+      "Raffaella Bernardi",
+      "Nicola Bertoldi",
+      "Alessandro Bondielli",
+      "Johannes Bos",
+      "Cristina Bosco",
+      "Roberto Bottini",
+      "Dominique Brunato",
+      "Dominique Brunato",
+      "Marco Büchler",
+      "Maria Pia Di Buono",
+      "Lucia Busso",
+      "Elena Cabrio",
+      "Valeria Caruso",
+      "Tommaso Caselli",
+      "Flavio Cecchini",
+      "Fabio Celli",
+      "Alessandra Cervone",
+      "Cristiano Chesi",
+      "Anupama Chingacham",
+      "Giulia Chiriatti",
+      "Andrea Cimino",
+      "Eleonora Cocciu",
+      "Davide Colla",
+      "Gloria Comandini",
+      "Silvio Ricardo Cordeiro",
+      "Davide Crepaldi",
+      "Danilo Croce",
+      "Paolo Curtoni",
+      "Francesco Cutugno",
+      "Pietro dell'Oglio",
+      "Felice Dell'Orletta",
+      "Felice Dell'Orletta",
+      "Irene De Felice",
+      "Maria De Martino",
+      "Luca Dini",
+      "Angelo Di Iorio",
+      "Giorgio Maria Di Nunzio",
+      "Lia Draetta",
+      "Luca Ducceschi",
+      "Annibale Elia",
+      "Daniele Falavigna",
+      "Marcello Federico",
+      "Anna Feltracco",
+      "Raquel Fernández",
+      "Michele Ferro",
+      "Martina Fieromonte",
+      "Greta Franzini",
+      "Gloria Gagliardi",
+      "Valentina Della Gala",
+      "Enrico Gambi",
+      "Ilaria Ghezzi",
+      "Emiliano Giovannetti",
+      "Jacopo Gobbi",
+      "Roberto Gretter",
+      "Raffaele Guarasci",
+      "Marco Guerini",
+      "Fritz Günther",
+      "Iryna Gurevych",
+      "Leonardo Herzog",
+      "Elisabetta Ježek",
+      "Forsina Koceva",
+      "Mirko Lai",
+      "Alessandro Laudanna",
+      "Alessandro Lenci",
+      "Bruno Lepri",
+      "Annarita Liano",
+      "Freddy Limpens",
+      "Samuel Louvan",
+      "Verena Lyding",
+      "Bernardo Magnini",
+      "Simone Magnolini",
+      "Paolo Mairano",
+      "Francesco Mambrini",
+      "Dario Mana",
+      "Azzurra Mancuso",
+      "Simone Marchi",
+      "Marco Marelli",
+      "Costanza Marini",
+      "Alessandro Mazzei",
+      "Stephen McGregor",
+      "Elena Melnikova",
+      "Stefano Menini",
+      "Enrico Mensa",
+      "Flavio Merenda",
+      "Eleonora Mollo",
+      "Simonetta Montemagni",
+      "Simonetta Montemagni",
+      "Johanna Monti",
+      "Giovanni Moretti",
+      "Maria Moritz",
+      "Andrea Nadalini",
+      "Matteo Negri",
+      "Lionel Nicolas",
+      "Malvina Nissim",
+      "Nicole Novielli",
+      "Nadezda Okinina",
+      "Ludovica Pannitto",
+      "Denis Paperno",
+      "Samuele Passalacqua",
+      "Lucia C Passaro",
+      "Marco Passarotti",
+      "Viviana Patti",
+      "Alessandra Pecchioli",
+      "Matteo Pellegrini",
+      "Ruggero Petrolito",
+      "Maria Chiara Pettenati",
+      "Giovanni Piantanida",
+      "Isabella Poggi",
+      "Aureliano Porporato",
+      "Vito Quinci",
+      "Daniele P Radicioni",
+      "Carlos Ramisch",
+      "Amon Rapp",
+      "Giuseppe Riccardi",
+      "Daniele Rossini",
+      "Agata Rotondi",
+      "Paolo Ruffolo",
+      "Irene Russo",
+      "Maria Teresa Sagri",
+      "Federico Sangati",
+      "Manuela Sanguinetti",
+      "Agata Savary",
+      "Renata Savy",
+      "Rossana Simeoni",
+      "Maria Simi",
+      "Antonio Sorgente",
+      "Manuela Speranza",
+      "Rachele Sprugnoli",
+      "Manfred Stede",
+      "Evgeny A Stepanov",
+      "Michele Stingo",
+      "Fabio Tamburini",
+      "Amirhossein Tebbifakhr"
+    ],
     "venue": "",
     "year": 2019,
     "citations": 0,
-    "url": ""
+    "url": "https://scholar.google.com/scholar?cluster=6808234068485395198&hl=en&oi=scholarr",
+    "bibtex": ""
   },
   {
     "title": "CoreNLP-it: A UD pipeline for Italian based on Stanford CoreNLP",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Lucia C Passaro",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2018,
     "citations": 8,
-    "url": ""
+    "url": "https://aclanthology.org/2018.clicit-1.12.pdf",
+    "bibtex": ""
   },
   {
     "title": "Proceedings of the Fifth Italian Conference on Computational Linguistics (CLiC-it 2018)",
-    "authors": [],
+    "authors": [
+      "Elena Cabrio",
+      "Alessandro Mazzei",
+      "Fabio Tamburini"
+    ],
     "venue": "",
     "year": 2018,
     "citations": 1,
-    "url": ""
+    "url": "https://aclanthology.org/2018.clicit-1.0.pdf",
+    "bibtex": ""
   },
   {
     "title": "Learning affect with distributional semantic models",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Lucia C Passaro",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
+    "venue": "IJCoL. Italian Journal of Computational Linguistics",
     "year": 2017,
     "citations": 8,
-    "url": ""
+    "url": "https://journals.openedition.org/ijcol/550",
+    "bibtex": ""
   },
   {
     "title": "Emo2val: Inferring valence scores from fine-grained emotion values",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Lucia Passaro",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2017,
     "citations": 4,
-    "url": ""
+    "url": "https://aclanthology.org/2017.clicit-1.13.pdf",
+    "bibtex": ""
   },
   {
     "title": "FB-NEWS15: A topic-annotated Facebook corpus for emotion detection and sentiment analysis",
-    "authors": [],
+    "authors": [
+      "Lucia Passaro",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": 2016,
     "citations": 9,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/842477",
+    "bibtex": ""
   },
   {
     "title": "Da Facebook a Twitter: Creazione e utilizzo di una risorsa lessicale emotiva per la sentiment analysis di tweet",
-    "authors": [],
+    "authors": [
+      "ALESSANDRO BONDIELLI"
+    ],
     "venue": "",
     "year": 2016,
     "citations": 0,
-    "url": ""
+    "url": "https://etd.adm.unipi.it/t/etd-09072016-210819/",
+    "bibtex": ""
   },
   {
     "title": "Exploiting Emotive Features for the Sentiment Polarity Classification of tweets",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Lucia Passaro",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
+    "venue": "COLLANA DELL'ASSOCIAZIONE ITALIANA DI LINGUISTICA COMPUTAZIONALE",
     "year": 2016,
     "citations": 0,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/842485",
+    "bibtex": ""
   },
   {
     "title": "You are what you do. An empirical characterization of the semantic content of the thematic roles for a group of Italian verbs",
-    "authors": [],
-    "venue": "",
+    "authors": [
+      "Gianluca Lebani",
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
+    "venue": "Journal of Cognitive Science",
     "year": 2015,
     "citations": 9,
-    "url": ""
+    "url": "https://arpi.unipi.it/handle/11568/766542",
+    "bibtex": ""
   },
   {
     "title": "Universita di Pisa",
-    "authors": [],
+    "authors": [
+      "Alessandro Bondielli",
+      "Alessandro Lenci"
+    ],
     "venue": "",
     "year": null,
     "citations": 0,
-    "url": ""
+    "url": "https://scholar.google.com/scholar?cluster=2055998922025757907&hl=en&oi=scholarr",
+    "bibtex": ""
   }
 ]

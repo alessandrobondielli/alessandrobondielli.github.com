@@ -1,6 +1,19 @@
----
-theme :
-  name : the-minimum
----
-{% include JB/setup %}
-{% include themes/the-minimum/default.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
+  <main class="main-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

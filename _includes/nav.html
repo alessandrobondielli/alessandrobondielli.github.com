@@ -1,0 +1,15 @@
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.author.name }}</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/about' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a></li>
+      <li><a href="{{ '/research' | relative_url }}"{% if page.url contains '/research' %} class="active"{% endif %}>Research</a></li>
+      <li><a href="{{ '/publications' | relative_url }}"{% if page.url contains '/publications' %} class="active"{% endif %}>Publications</a></li>
+      <li><a href="{{ '/blog' | relative_url }}"{% if page.url contains '/blog' %} class="active"{% endif %}>Blog</a></li>
+      <li><a href="{{ '/teaching' | relative_url }}"{% if page.url contains '/teaching' %} class="active"{% endif %}>Teaching</a></li>
+      <li><a href="{{ '/contact' | relative_url }}"{% if page.url contains '/contact' %} class="active"{% endif %}>Contact</a></li>
+    </ul>
+  </div>
+</nav>

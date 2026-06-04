@@ -91,19 +91,21 @@ All visual variables live at the **top of `assets/css/main.css`** inside `:root 
 
 ## Google Scholar integration
 
-Publications are fetched automatically by `_scripts/fetch_scholar.py` and stored in `_data/publications.json`. The GitHub Actions workflow (`.github/workflows/deploy.yml`) runs this script on every push and on a weekly Monday schedule, then commits the updated JSON back to the repo before building Jekyll.
+Publications are fetched **locally** via `_scripts/fetch_scholar.py` and committed as `_data/publications.json`. The CI pipeline does not fetch Scholar — Google blocks cloud/CI IP ranges, so it would hang indefinitely.
 
-**To run locally:**
+**To update publications:**
 ```bash
 pip install scholarly
 python _scripts/fetch_scholar.py
+git add _data/publications.json
+git commit -m "update publications"
+git push
 ```
 
 **How it works:**
 - `scholarly` queries Scholar ID `zcXQk6YAAAAJ` and writes `_data/publications.json`
 - `publications.md` loops over `site.data.publications` via Liquid
 - Author name "Bondielli" is automatically bolded in the author list
-- The workflow uses `continue-on-error: true` so a Scholar rate-limit doesn't break the build — the last committed JSON is used as fallback
-- The committed `_data/publications.json` is the canonical fallback; never delete it manually
+- `_data/publications.json` is committed to the repo; never delete it
 
 **To change the Scholar ID**, update `SCHOLAR_ID` in `_scripts/fetch_scholar.py`.

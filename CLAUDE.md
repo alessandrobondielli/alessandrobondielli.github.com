@@ -89,10 +89,21 @@ All visual variables live at the **top of `assets/css/main.css`** inside `:root 
 | Darker background | `--color-bg: #0f172a`, `--color-bg-subtle: #1e293b`, `--color-border: #334155`, `--color-text: #f1f5f9`, `--color-text-muted: #94a3b8` |
 | Different font | Replace `'Inter'` with any [Google Font](https://fonts.google.com) name and update the `<link>` in `_includes/head.html` |
 
-## Google Scholar integration (future)
+## Google Scholar integration
 
-When ready to auto-populate publications from Scholar:
-1. Install `scholarly` Python package: `pip install scholarly`
-2. Create a script `_scripts/fetch_publications.py` that queries your Scholar profile and writes `_data/publications.json`
-3. Replace the static HTML in `publications.md` with a Liquid loop over `site.data.publications`
-4. Add the script as a step in `.github/workflows/` before the Jekyll build step
+Publications are fetched automatically by `_scripts/fetch_scholar.py` and stored in `_data/publications.json`. The GitHub Actions workflow (`.github/workflows/deploy.yml`) runs this script on every push and on a weekly Monday schedule, then commits the updated JSON back to the repo before building Jekyll.
+
+**To run locally:**
+```bash
+pip install scholarly
+python _scripts/fetch_scholar.py
+```
+
+**How it works:**
+- `scholarly` queries Scholar ID `zcXQk6YAAAAJ` and writes `_data/publications.json`
+- `publications.md` loops over `site.data.publications` via Liquid
+- Author name "Bondielli" is automatically bolded in the author list
+- The workflow uses `continue-on-error: true` so a Scholar rate-limit doesn't break the build — the last committed JSON is used as fallback
+- The committed `_data/publications.json` is the canonical fallback; never delete it manually
+
+**To change the Scholar ID**, update `SCHOLAR_ID` in `_scripts/fetch_scholar.py`.

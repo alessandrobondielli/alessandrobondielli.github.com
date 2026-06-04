@@ -4,13 +4,9 @@
    ============================================================ */
 :root {
   /* --- Accent colours --- */
-  --color-primary:        #1d4ed8;   /* main blue */
-  --color-primary-light:  #dbeafe;   /* light blue tint (cards, tags) */
-  --color-primary-dark:   #1e40af;   /* darker blue (hover states) */
-
-  --color-primary:        #16a34a;   /* main blue */
-  --color-primary-light:  #dcfce7;   /* light blue tint (cards, tags) */
-  --color-primary-dark:   #15803d;   /* darker blue (hover states) */
+  --color-primary:        #16a34a;   /* main green */
+  --color-primary-light:  #dcfce7;   /* light green tint (cards, tags) */
+  --color-primary-dark:   #15803d;   /* darker green (hover states) */
 
   /* --- Text --- */
   --color-text:           #1e293b;   /* body text */

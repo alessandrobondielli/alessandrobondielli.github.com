@@ -1,0 +1,72 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '0 6 * * 1'   # refresh publications every Monday at 06:00 UTC
+  workflow_dispatch:       # allow manual trigger from the Actions tab
+
+permissions:
+  contents: write          # needed to commit updated publications.json
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install scholarly
+
+      - name: Fetch publications from Google Scholar
+        id: fetch_pubs
+        run: python _scripts/fetch_scholar.py
+        continue-on-error: true   # build still succeeds if Scholar is rate-limited
+
+      - name: Commit updated publications (if changed)
+        if: steps.fetch_pubs.outcome == 'success'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/publications.json
+          git diff --cached --quiet || git commit -m "chore: update publications from Google Scholar [skip ci]"
+          git push
+        continue-on-error: true
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

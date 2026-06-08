@@ -5,13 +5,15 @@ description: "More about Alessandro Bondielli — research background, interests
 permalink: /about/
 ---
 
-## Biography
+## Bio
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I serve as an Assistant Professor in the Department of Computer Science at the University of Pisa, where I specialize on Natural Language Processing. 
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+My research sits at the intersection of model understanding and language. I want to know not just *what* language models can do, but *how* and *why* they do it. My current primary focus is **Mechanistic Interpretability**: reverse-engineering the internal representations and circuits of large language models to build a principled account of their behaviour with the goal of a safer AI.
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+I am also interested in **Fake News Detection and computational fact-checking**, approaching misinformation as a structured NLP problem rather than a content-moderation one. I have also worked, and still work, on **multimodal NLP**, exploring how vision and language representations interact and can be aligned.
+
+Outside research I am a (non) competitive powerlifter and an enthusiastic photographer, with a particular interest in portraits work.
 
 ## Education
 
@@ -22,7 +24,7 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 
 ## Academic Positions
 
-- **Assistant Professor** — University of Pisa, Department of Computer Science *(2022-present)*
+- **Assistant Professor** — University of Pisa, Dept. of Computer Science and Dept. of Philology, Literature and Linguistics (2022-present). Member of the [CoLingLab](https://colinglab.fileli.unipi.it) (Computational Linguistics Laboratory)
 - **Postdoctoral Researcher** — University of Pisa, Department of Information Engineering *(2021-2022)*
 
 ## Research Interests

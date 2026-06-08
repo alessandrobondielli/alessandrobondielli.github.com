@@ -13,11 +13,11 @@ Feel free to reach out by email for research collaborations, student supervision
     <h3>Office</h3>
     <div class="contact-row">
       <span class="contact-label">Address</span>
-      <span class="contact-value">Department of Computer Science<br>University of Pisa<br>Largo B. Pontecorvo 3<br>56127 Pisa, Italy</span>
+      <span class="contact-value">Department of Philology, Literature and Linguistics<br>University of Pisa<br>Via S. Maria 36<br>56126 Pisa, Italy</span>
     </div>
     <div class="contact-row">
       <span class="contact-label">Room</span>
-      <span class="contact-value">Room XX *(update)*</span>
+      <span class="contact-value">Room 15 - Laboratorio di Linguistica Computazionale</span>
     </div>
     <div class="contact-row">
       <span class="contact-label">Email</span>

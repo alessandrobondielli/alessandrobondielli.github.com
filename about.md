@@ -15,19 +15,19 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 
 ## Education
 
-- **PhD in Computer Science** — University of Pisa *(year)*
-  Thesis: *Lorem ipsum dolor sit amet*
-- **MSc in Computer Science** — University of Pisa *(year)*
-- **BSc in Computer Science** — University of Pisa *(year)*
+- **PhD in Smart Computing** — University of Florence *(2021)*
+  Thesis: *Combining natural language processing and machine learning for profiling and fake news detection*
+- **MSc in Informatica Umanistica (Digital Humanities)** — University of Pisa *(2016)*
+- **BSc in Informatica Umanistica (Digital Humanities)** — University of Pisa *(2014)*
 
 ## Academic Positions
 
-- **Assistant Professor** — University of Pisa, Department of Computer Science *(year–present)*
-- **Postdoctoral Researcher** — *(institution, year–year)*
+- **Assistant Professor** — University of Pisa, Department of Computer Science *(2022-present)*
+- **Postdoctoral Researcher** — University of Pisa, Department of Information Engineering *(2021-2022)*
 
 ## Research Interests
 
-Natural Language Processing, Information Extraction, Text Classification, Computational Semantics, and the application of language technologies to domain-specific tasks.
+Natural Language Processing, Language Models, Mechanistic Interpretability, Fake News Detection.
 
 ## Service
 

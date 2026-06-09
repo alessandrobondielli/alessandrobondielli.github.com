@@ -29,9 +29,5 @@ Outside research I am a (non) competitive powerlifter and an enthusiastic photog
 
 ## Research Interests
 
-Natural Language Processing, Language Models, Mechanistic Interpretability, Fake News Detection.
+Natural Language Processing, Language Models, Mechanistic Interpretability, Fake News Detection, Multimodal NLP, Causal Inference in LMs, Baby Language Models.
 
-## Service
-
-- Reviewing for: *(list conferences/journals)*
-- Program Committee: *(list)*

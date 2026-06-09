@@ -57,7 +57,7 @@ I am a member of the [CoLingLab](https://colinglab.fileli.unipi.it) (Computation
 
   <div class="further-item">
     <h4>BabyLMs &amp; Data-Efficient Language Modelling</h4>
-    <p>Can we train competent language models on small, cognitively plausible data budgets? I have participated in the BabyLM Challenge exploring curriculum learning strategies and instruction-tuning approaches for small-scale models trained from scratch. Related works: <a href="https://aclanthology.org/2024.conll-babylm.16/" target="_blank" rel="noopener">ConcreteGPT: A Baby GPT-2 Based on Lexical Concreteness and Curriculum Learning</a> (BabyLM 2024) &middot; <a href="https://aclanthology.org/2025.babylm-main.30/" target="_blank" rel="noopener">CLASS-IT: Conversational and Lecture-Aligned Small-Scale Instruction Tuning</a> (BabyLM 2025)</p>
+    <p>Can we train competent language models on small, cognitively plausible data budgets? I have participated in the BabyLM Challenge exploring curriculum learning strategies and instruction-tuning approaches for small-scale models trained from scratch. Related works: <a href="https://aclanthology.org/2024.conll-babylm.16/" target="_blank" rel="noopener">ConcreteGPT: A Baby GPT-2 Based on Lexical Concreteness and Curriculum Learning</a> (BabyLM 2024) &middot; <a href="https://aclanthology.org/2025.babylm-main.30/" target="_blank" rel="noopener">CLASS-IT: Conversational and Lecture-Aligned Small-Scale Instruction Tuning</a> (BabyLM 2025, winner of the Challenge Award at the BabyLM Challenge & Workshop 2025)</p>
   </div>
 
 </div>

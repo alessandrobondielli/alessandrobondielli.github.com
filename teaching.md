@@ -16,23 +16,23 @@ I teach courses at the University of Pisa. Course materials and additional resou
 
   <div class="course-item">
     <div class="course-info">
-      <h3><a href="#">Natural Language Processing</a></h3>
-      <p>MSc in Computer Science &middot; University of Pisa</p>
+      <h3><a href="https://elearning22.humnet.unipi.it/course/view.php?id=1564">Linguistica Computazionale</a></h3>
+      <p>Laurea Triennale in Informatica Umanistica &middot; Università di Pisa</p>
     </div>
     <div class="course-meta">
-      <span class="course-badge">MSc</span>
-      <span class="course-year">A.Y. 2024–25</span>
+      <span class="course-badge">BSc</span>
+      <span class="course-year">A.Y. 2025–26</span>
     </div>
   </div>
 
   <div class="course-item">
     <div class="course-info">
-      <h3><a href="#">Foundations of Artificial Intelligence</a></h3>
-      <p>BSc in Computer Science &middot; University of Pisa</p>
+      <h3><a href="https://elearning22.humnet.unipi.it/course/view.php?id=1743">Linguistica Computazionale</a></h3>
+      <p>Laurea Magistrale in Linguistica E Traduzione &middot; Università di Pisa</p>
     </div>
     <div class="course-meta">
-      <span class="course-badge">BSc</span>
-      <span class="course-year">A.Y. 2024–25</span>
+      <span class="course-badge">MSc</span>
+      <span class="course-year">A.Y. 2025–26</span>
     </div>
   </div>
 
@@ -40,7 +40,7 @@ I teach courses at the University of Pisa. Course materials and additional resou
 </div>
 
 ---
-
+<!--
 ## Past Courses
 
 <div class="teaching-section">
@@ -59,3 +59,4 @@ I teach courses at the University of Pisa. Course materials and additional resou
 
 </div>
 </div>
+-->

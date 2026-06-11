@@ -9,9 +9,9 @@ permalink: /about/
 
 I serve as an Assistant Professor in the Department of Computer Science at the University of Pisa, where I specialize on Natural Language Processing. 
 
-My research sits at the intersection of model understanding and language. I want to know not just *what* language models can do, but *how* and *why* they do it. My current primary focus is **Mechanistic Interpretability**: reverse-engineering the internal representations and circuits of large language models to build a principled account of their behaviour with the goal of a safer AI.
+My research is in Natural Language Processing, centred on language models — their evaluation, their applications, and increasingly their internals. A significant part of my work has been on **Fake News Detection and computational fact-checking**, approaching misinformation as a structured NLP problem rather than a content-moderation one. I have also worked on **multimodal NLP**, exploring how vision and language representations interact and can be aligned.
 
-I am also interested in **Fake News Detection and computational fact-checking**, approaching misinformation as a structured NLP problem rather than a content-moderation one. I have also worked, and still work, on **multimodal NLP**, exploring how vision and language representations interact and can be aligned.
+More recently I have been gravitating toward the interpretability side of things: I want to understand not just *what* language models can do, but *how* and *why* they do it. I am actively exploring **Mechanistic Interpretability** — reverse-engineering the internal representations and circuits of these models — though I consider myself a newcomer to the field rather than an expert.
 
 Outside research I am a (non) competitive powerlifter and an enthusiastic photographer, with a particular interest in portraits work.
 

@@ -1,5 +1,20 @@
 [
   {
+    "title": "Right for the Right Reasons? A Chain-of-Thought Analysis of Commonsense Causal Reasoning",
+    "authors": [
+      "Serena Auriemma",
+      "Martina Miliani",
+      "Alessandro Bondielli",
+      "Lucia Passaro",
+      "Alessandro Lenci"
+    ],
+    "venue": "Proceedings of the Ninth Workshop on Natural Language for Artificial Intelligence (NL4AI 2026), 2026",
+    "year": 2026,
+    "citations": 1,
+    "url": "https://ceur-ws.org/Vol-4315/paper10.pdf",
+    "bibtex": ""
+  },
+  {
     "title": "An experimental comparison of the most popular approaches to fake news detection",
     "authors": [
       "Pietro Dell’Oglio",
@@ -11,6 +26,52 @@
     "year": 2026,
     "citations": 0,
     "url": "https://www.sciencedirect.com/science/article/pii/S0020025526003385",
+    "bibtex": ""
+  },
+  {
+    "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
+    "authors": [
+      "Alessandro Bondielli",
+      "Lucia Passaro",
+      "Serena Auriemma",
+      "Alessandro Lenci"
+    ],
+    "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://aclanthology.org/2026.emnlp-main.2656/",
+    "bibtex": ""
+  },
+  {
+    "title": "Likelihood Ranking doesn't Scale Like Prompting in LLMs",
+    "authors": [
+      "Alessandro Bondielli",
+      "Lucia Passaro",
+      "Davide Bacciu",
+      "Alessandro Lenci"
+    ],
+    "venue": "arXiv preprint arXiv:2609.29390, 2026",
+    "year": 2026,
+    "citations": 0,
+    "url": "https://arxiv.org/abs/2609.29390",
+    "bibtex": ""
+  },
+  {
+    "title": "Artificial intelligence for the surveillance of surgical site infections: the AI-SSI study protocol",
+    "authors": [],
+    "venue": "",
+    "year": 2026,
+    "citations": 0,
+    "url": "",
+    "bibtex": ""
+  },
+  {
+    "title": "NL4AI 2026: Overview of the Ninth Workshop on Natural Language for Artificial Intelligence (NL4AI 2026)",
+    "authors": [],
+    "venue": "",
+    "year": 2026,
+    "citations": 0,
+    "url": "",
     "bibtex": ""
   },
   {

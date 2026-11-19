@@ -8,6 +8,8 @@ Personal academic website for **Alessandro Bondielli**, PhD, Assistant Professor
 
 ## Build and serve
 
+Ruby is managed by rbenv (`.ruby-version` = 3.3.6). Non-interactive shells may pick up the system Ruby 2.6 and fail with a bundler version error; activate rbenv first: `eval "$(rbenv init - zsh)"`.
+
 ```bash
 bundle install          # first time only
 bundle exec jekyll serve --livereload
@@ -43,7 +45,15 @@ excerpt: "One sentence shown in listings."
 ---
 ```
 
-**New publication** — edit `publications.md` directly. Copy an existing `.pub-item` block and update the fields. Bold your name in `pub-authors` with `<strong>`.
+**New publication** — add/edit the entry in `_data/publications.json` (title, authors, venue, year, citations, url); `publications.md` renders it via Liquid. See the Google Scholar section for fetching. Also update the cards in `research.md` when a paper belongs to a research area.
+
+**Blog post for a paper** — pattern used for the EMNLP 2026, NL4AI 2026 and arXiv posts:
+- Extract text with `pdftotext -layout`, and figures with `pdfimages -png`; embedded images come with a separate soft mask (`smask`), so composite each onto white with Pillow before saving (see `assets/img/posts/pos-sae/`).
+- Save figures in `assets/img/posts/<slug>/` and embed with `<figure><img src="{{ '/assets/img/posts/<slug>/figX.png' | relative_url }}" alt="…"><figcaption>…</figcaption></figure>` (styled in `main.css` under `.post-body figure`).
+- Do not state facts (talk details, locations, attendance) that are not in the paper or an official page.
+- Post `date:` comes from the filename. Homepage news shows the 5 newest posts, so pick dates deliberately if one post must appear last/first (e.g. real arXiv/proceedings dates).
+- Post titles are plain text in `<title>`, the blog list and the feed — do not use Markdown (`_italics_`) in `title:`; use quotes instead.
+- Homepage news dates use `<br>` between "Mon D," and the year; a literal `\n` inside a Liquid `date` format does not produce a line break.
 
 **Profile photo** — place `assets/img/photo.jpg` (square, ≥300 px), then in `index.html` replace the `<svg>` inside `.avatar-placeholder` with:
 ```html
@@ -107,5 +117,12 @@ git push
 - `publications.md` loops over `site.data.publications` via Liquid
 - Author name "Bondielli" is automatically bolded in the author list
 - `_data/publications.json` is committed to the repo; never delete it
+
+**Known issues (as of Nov 2026):**
+- `scholarly` needs `bibtexparser<2` (2.x breaks `scholarly` imports). Use a venv outside the repo, e.g. `pip install scholarly "bibtexparser<2"`.
+- Scholar often blocks the per-paper detail pages (`scholarly.fill(pub)` raises `AttributeError`), which crashes `fetch_scholar.py` and returns entries without authors/links. The author-profile listing itself still works.
+- Workaround used: list the profile, and only append entries whose title is not already in `_data/publications.json` (merge, don't overwrite), then fill authors/venue/url by hand from the official source (ACL Anthology `.bib`, arXiv, CEUR, SSRN). Browser (Claude in Chrome) can read pages that block plain fetches (ProQuest, SSRN) but never bypass a bot check.
+- `_data/publications.json` contains hand-corrected entries (e.g. MAIA "All-in-one" → EMNLP Findings 2025 with Anthology link; AI-SSI protocol; NL4AI overview). A full re-fetch from Scholar would overwrite these; re-apply or merge instead.
+- Scholar lists some papers as arXiv/preprint after they are published at a venue; check and fix venue/url by hand.
 
 **To change the Scholar ID**, update `SCHOLAR_ID` in `_scripts/fetch_scholar.py`.

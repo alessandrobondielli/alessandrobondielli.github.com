@@ -54,7 +54,7 @@ title: Home
   <div class="news-list">
     {% for post in site.posts limit:5 %}
     <div class="news-item">
-      <div class="news-date">{{ post.date | date: "%b %-d,\n%Y" }}</div>
+      <div class="news-date">{{ post.date | date: "%b %-d," }}<br>{{ post.date | date: "%Y" }}</div>
       <div class="news-body">
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
         {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>{% endif %}

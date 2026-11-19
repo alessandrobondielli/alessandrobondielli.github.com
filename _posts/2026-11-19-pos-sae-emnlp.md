@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "_Parts-of-Speech as Emergent Categories in SAE Latent Space_ - EMNLP 2026 paper"
+title: 'EMNLP 2026 paper: “Parts-of-Speech as Emergent Categories in SAE Latent Space”'
 tags: [research, NLP, interpretability, EMNLP]
 excerpt: "Our paper on how part-of-speech categories are organised in the latents of a Sparse AutoEncoder was presented at EMNLP 2026."
 ---

@@ -18,6 +18,7 @@ I am a member of the [CoLingLab](https://colinglab.fileli.unipi.it) (Computation
     <p>My current primary focus. Rather than asking what a model can do, mechanistic interpretability asks <em>how</em> it does it — mapping internal representations, circuits, and features back to human-interpretable concepts. I am particularly interested in sparse dictionary learning techniques (Sparse Autoencoders) as a tool for decomposing model activations into interpretable directions, and in applying these methods to smaller and multilingual models where ground truth is more tractable.</p>
     <p class="research-card-pubs">
       <strong>Representative work:</strong>
+      <a href="https://aclanthology.org/2026.emnlp-main.2656/" target="_blank" rel="noopener">Parts-of-Speech as Emergent Categories in SAE Latent Space</a> (EMNLP 2026) &middot;
       <a href="https://aclanthology.org/2025.clicit-1.11.pdf" target="_blank" rel="noopener">Sparse Autoencoders Find Partially Interpretable Features in Italian Small Language Models</a> (CLiC-it 2025)
     </p>
   </div>
@@ -52,7 +53,12 @@ I am a member of the [CoLingLab](https://colinglab.fileli.unipi.it) (Computation
 
   <div class="further-item">
     <h4>Causal Reasoning in LLMs</h4>
-    <p>How well do large language models handle explicit causal relations — both in English and in Italian? I have worked on benchmark design and evaluation of LLMs on causal reasoning tasks, finding consistent gaps between surface-level and genuine causal understanding. Related works: <a href="https://aclanthology.org/2025.findings-acl.891/" target="_blank" rel="noopener">ExpliCa: Evaluating Explicit Causal Reasoning in LLMs</a> (ACL Findings 2025) &middot; <a href="https://aclanthology.org/2025.clicit-1.10.pdf" target="_blank" rel="noopener">LLMs Struggle on Explicit Causality in Italian</a> (CLiC-it 2025)</p>
+    <p>How well do large language models handle explicit causal relations — both in English and in Italian? I have worked on benchmark design and evaluation of LLMs on causal reasoning tasks, finding consistent gaps between surface-level and genuine causal understanding. Related works: <a href="https://ceur-ws.org/Vol-4315/paper10.pdf" target="_blank" rel="noopener">Right for the Right Reasons? A Chain-of-Thought Analysis of Commonsense Causal Reasoning</a> (NL4AI 2026) &middot; <a href="https://aclanthology.org/2025.findings-acl.891/" target="_blank" rel="noopener">ExpliCa: Evaluating Explicit Causal Reasoning in LLMs</a> (ACL Findings 2025) &middot; <a href="https://aclanthology.org/2025.clicit-1.10.pdf" target="_blank" rel="noopener">LLMs Struggle on Explicit Causality in Italian</a> (CLiC-it 2025)</p>
+  </div>
+
+  <div class="further-item">
+    <h4>LLM Evaluation</h4>
+    <p>Different evaluation protocols can tell different stories about the same model. I study how prompting-based and likelihood-based evaluation diverge across model scale and instruction-tuning. Related works: <a href="https://arxiv.org/abs/2609.29390" target="_blank" rel="noopener">Likelihood Ranking doesn't Scale Like Prompting in LLMs</a> (arXiv 2026)</p>
   </div>
 
   <div class="further-item">
